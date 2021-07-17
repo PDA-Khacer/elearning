@@ -1,0 +1,10 @@
+.section-course {
+    border-style: solid;
+    border-width: 1px;
+    border-color: silver;
+    box-shadow: 5px 10px 5px wheat;
+}
+
+.element-right {
+    float: right;
+}

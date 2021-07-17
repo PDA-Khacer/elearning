@@ -1,0 +1,36 @@
+/* ---------------------------------------------------
+    Section
+----------------------------------------------------- */
+
+.section-course {
+    border-style: solid;
+    border-width: 1px;
+    border-color: silver;
+    box-shadow: 5px 10px 5px wheat;
+}
+
+.element-left * {
+    float: left;
+}
+
+.element-right * {
+    float: right;
+}
+
+.logo-element {
+    width: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-element {
+    color: steelblue;
+}
+
+.decription-element {
+    color: #000;
+}
+
+.content-section-course .row {
+    margin-left: 0px;
+}

@@ -1,0 +1,31 @@
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\bin\Debug\Winform.exe.config
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\bin\Debug\Winform.exe
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\bin\Debug\Winform.pdb
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.Form1.resources
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.Properties.Resources.resources
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.Quanlytaikhoan.resources
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.ThemTaikhoanvàolophocphan.resources
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.csproj.GenerateResource.cache
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.csproj.CoreCompileInputs.cache
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.exe
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.pdb
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.QuanLyLopHocPhan.resources
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\bin\Debug\Newtonsoft.Json.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\bin\Debug\Newtonsoft.Json.xml
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.csproj.CopyComplete
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\bin\Debug\Winform.exe.config
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\bin\Debug\Winform.exe
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\bin\Debug\Winform.pdb
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\bin\Debug\Newtonsoft.Json.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\bin\Debug\Newtonsoft.Json.xml
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.csprojAssemblyReference.cache
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.Form1.resources
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.Properties.Resources.resources
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.QuanLyLopHocPhan.resources
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.Quanlytaikhoan.resources
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.ThemTaikhoanvàolophocphan.resources
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.csproj.GenerateResource.cache
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.csproj.CoreCompileInputs.cache
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.csproj.CopyComplete
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.exe
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Winform\obj\Debug\Winform.pdb

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllLecture">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllLectureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllLectureResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllLectureInClass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllLectureInClassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllLectureInClassResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllQuestion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idExam" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllQuestionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllQuestionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQuestion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idQ" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQuestionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQuestionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExam">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idExam" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExamResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllExam">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idContent" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllExamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllExamResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateLecture">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codeLecture" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="header" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="idTeacher" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idCourse" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateLectureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateLectureResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddLectureToClass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idLecture" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddLectureToClassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddLectureToClassResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAndAddToClass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codeLecture" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="header" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="idTeacher" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idCourse" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAndAddToClassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateAndAddToClassResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveALectureOfClass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idLecture" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveALectureOfClassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveALectureOfClassResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveAllLectureOfClass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveAllLectureOfClassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveAllLectureOfClassResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateEmptyExamInLecture">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codeContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="header" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dayOpen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dayClose" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dayExipre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeStart" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="duration" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="idTeacher" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idLecture" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateEmptyExamInLectureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateEmptyExamInLectureResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateQuestMCQ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codeQuest" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numberOder" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="header" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="img" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codeContentlec" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="correctAnswer" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateQuestMCQResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateQuestMCQResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAnswerForQuestion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codeAnswer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="charOrder" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="img" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codeQuestion" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAnswerForQuestionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateAnswerForQuestionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllLectureSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllLecture" />
+  </wsdl:message>
+  <wsdl:message name="GetAllLectureSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllLectureResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllLectureInClassSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllLectureInClass" />
+  </wsdl:message>
+  <wsdl:message name="GetAllLectureInClassSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllLectureInClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllQuestionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllQuestion" />
+  </wsdl:message>
+  <wsdl:message name="GetAllQuestionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllQuestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQuestionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQuestion" />
+  </wsdl:message>
+  <wsdl:message name="GetQuestionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQuestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExamSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExam" />
+  </wsdl:message>
+  <wsdl:message name="GetExamSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExamResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExamSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllExam" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExamSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllExamResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateLectureSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateLecture" />
+  </wsdl:message>
+  <wsdl:message name="CreateLectureSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateLectureResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddLectureToClassSoapIn">
+    <wsdl:part name="parameters" element="tns:AddLectureToClass" />
+  </wsdl:message>
+  <wsdl:message name="AddLectureToClassSoapOut">
+    <wsdl:part name="parameters" element="tns:AddLectureToClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAndAddToClassSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAndAddToClass" />
+  </wsdl:message>
+  <wsdl:message name="CreateAndAddToClassSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAndAddToClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveALectureOfClassSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveALectureOfClass" />
+  </wsdl:message>
+  <wsdl:message name="RemoveALectureOfClassSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveALectureOfClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveAllLectureOfClassSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveAllLectureOfClass" />
+  </wsdl:message>
+  <wsdl:message name="RemoveAllLectureOfClassSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveAllLectureOfClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateEmptyExamInLectureSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateEmptyExamInLecture" />
+  </wsdl:message>
+  <wsdl:message name="CreateEmptyExamInLectureSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateEmptyExamInLectureResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateQuestMCQSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateQuestMCQ" />
+  </wsdl:message>
+  <wsdl:message name="CreateQuestMCQSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateQuestMCQResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAnswerForQuestionSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAnswerForQuestion" />
+  </wsdl:message>
+  <wsdl:message name="CreateAnswerForQuestionSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAnswerForQuestionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Teacher_ServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLecture">
+      <wsdl:input message="tns:GetAllLectureSoapIn" />
+      <wsdl:output message="tns:GetAllLectureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLectureInClass">
+      <wsdl:input message="tns:GetAllLectureInClassSoapIn" />
+      <wsdl:output message="tns:GetAllLectureInClassSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllQuestion">
+      <wsdl:input message="tns:GetAllQuestionSoapIn" />
+      <wsdl:output message="tns:GetAllQuestionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQuestion">
+      <wsdl:input message="tns:GetQuestionSoapIn" />
+      <wsdl:output message="tns:GetQuestionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExam">
+      <wsdl:input message="tns:GetExamSoapIn" />
+      <wsdl:output message="tns:GetExamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllExam">
+      <wsdl:input message="tns:GetAllExamSoapIn" />
+      <wsdl:output message="tns:GetAllExamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateLecture">
+      <wsdl:input message="tns:CreateLectureSoapIn" />
+      <wsdl:output message="tns:CreateLectureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLectureToClass">
+      <wsdl:input message="tns:AddLectureToClassSoapIn" />
+      <wsdl:output message="tns:AddLectureToClassSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAndAddToClass">
+      <wsdl:input message="tns:CreateAndAddToClassSoapIn" />
+      <wsdl:output message="tns:CreateAndAddToClassSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveALectureOfClass">
+      <wsdl:input message="tns:RemoveALectureOfClassSoapIn" />
+      <wsdl:output message="tns:RemoveALectureOfClassSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAllLectureOfClass">
+      <wsdl:input message="tns:RemoveAllLectureOfClassSoapIn" />
+      <wsdl:output message="tns:RemoveAllLectureOfClassSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmptyExamInLecture">
+      <wsdl:input message="tns:CreateEmptyExamInLectureSoapIn" />
+      <wsdl:output message="tns:CreateEmptyExamInLectureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateQuestMCQ">
+      <wsdl:input message="tns:CreateQuestMCQSoapIn" />
+      <wsdl:output message="tns:CreateQuestMCQSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAnswerForQuestion">
+      <wsdl:input message="tns:CreateAnswerForQuestionSoapIn" />
+      <wsdl:output message="tns:CreateAnswerForQuestionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Teacher_ServiceSoap" type="tns:Teacher_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLecture">
+      <soap:operation soapAction="http://tempuri.org/GetAllLecture" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLectureInClass">
+      <soap:operation soapAction="http://tempuri.org/GetAllLectureInClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllQuestion">
+      <soap:operation soapAction="http://tempuri.org/GetAllQuestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuestion">
+      <soap:operation soapAction="http://tempuri.org/GetQuestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExam">
+      <soap:operation soapAction="http://tempuri.org/GetExam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllExam">
+      <soap:operation soapAction="http://tempuri.org/GetAllExam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLecture">
+      <soap:operation soapAction="http://tempuri.org/CreateLecture" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLectureToClass">
+      <soap:operation soapAction="http://tempuri.org/AddLectureToClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAndAddToClass">
+      <soap:operation soapAction="http://tempuri.org/CreateAndAddToClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveALectureOfClass">
+      <soap:operation soapAction="http://tempuri.org/RemoveALectureOfClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAllLectureOfClass">
+      <soap:operation soapAction="http://tempuri.org/RemoveAllLectureOfClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmptyExamInLecture">
+      <soap:operation soapAction="http://tempuri.org/CreateEmptyExamInLecture" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateQuestMCQ">
+      <soap:operation soapAction="http://tempuri.org/CreateQuestMCQ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAnswerForQuestion">
+      <soap:operation soapAction="http://tempuri.org/CreateAnswerForQuestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Teacher_ServiceSoap12" type="tns:Teacher_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLecture">
+      <soap12:operation soapAction="http://tempuri.org/GetAllLecture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLectureInClass">
+      <soap12:operation soapAction="http://tempuri.org/GetAllLectureInClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllQuestion">
+      <soap12:operation soapAction="http://tempuri.org/GetAllQuestion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuestion">
+      <soap12:operation soapAction="http://tempuri.org/GetQuestion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExam">
+      <soap12:operation soapAction="http://tempuri.org/GetExam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllExam">
+      <soap12:operation soapAction="http://tempuri.org/GetAllExam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLecture">
+      <soap12:operation soapAction="http://tempuri.org/CreateLecture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLectureToClass">
+      <soap12:operation soapAction="http://tempuri.org/AddLectureToClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAndAddToClass">
+      <soap12:operation soapAction="http://tempuri.org/CreateAndAddToClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveALectureOfClass">
+      <soap12:operation soapAction="http://tempuri.org/RemoveALectureOfClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAllLectureOfClass">
+      <soap12:operation soapAction="http://tempuri.org/RemoveAllLectureOfClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmptyExamInLecture">
+      <soap12:operation soapAction="http://tempuri.org/CreateEmptyExamInLecture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateQuestMCQ">
+      <soap12:operation soapAction="http://tempuri.org/CreateQuestMCQ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAnswerForQuestion">
+      <soap12:operation soapAction="http://tempuri.org/CreateAnswerForQuestion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Teacher_Service">
+    <wsdl:port name="Teacher_ServiceSoap" binding="tns:Teacher_ServiceSoap">
+      <soap:address location="https://localhost:44300/ServicesWebASMX/Teacher_Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Teacher_ServiceSoap12" binding="tns:Teacher_ServiceSoap12">
+      <soap12:address location="https://localhost:44300/ServicesWebASMX/Teacher_Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

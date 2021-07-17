@@ -1,0 +1,196 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout_student.cshtml";
+}
+
+<h3>Danh sách học phần đã truy cập</h3>
+<div class="contain contain-card carousol-subject">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="col-md-4 col-sm-6 col-xs-6 card-item">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="~/Content/png/ShortLogo.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tên môn học</h5>
+                            <p class="card-text">Decription</p>
+                            <a href="#" class="btn btn-primary">Chi tiết bài giảng</a>
+                            <div class="progress" style="margin-top: 5px;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    70%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-4 col-sm-6 col-xs-6 card-item">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="~/Content/png/ShortLogo.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tên môn học</h5>
+                            <p class="card-text">Decription</p>
+                            <a href="#" class="btn btn-primary">Chi tiết bài giảng</a>
+                            <div class="progress" style="margin-top: 5px;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    70%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-4 col-sm-6 col-xs-6 card-item">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="~/Content/png/ShortLogo.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tên môn học</h5>
+                            <p class="card-text">Decription</p>
+                            <a href="#" class="btn btn-primary">Chi tiết bài giảng</a>
+                            <div class="progress" style="margin-top: 5px;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    70%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="line"></div>
+
+
+<!-- Card -->
+<h3>Danh sách học phần </h3>
+<div class="contain">
+    <div class="contain-card">
+        <div class="row">
+            <!-- btn left -->
+            <div class="col btn-fliter">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info">Các bộ lọc</button>
+                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item active" href="#">Học phần hiện tại đang học</a>
+                        <a class="dropdown-item" href="#">Học phần đã học</a>
+                        <a class="dropdown-item" href="#">Ưa thích</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- btn right -->
+            <div class="col btn-fliter-right">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info">Action</button>
+                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info">Action</button>
+                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-6 card-item">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="~/Content/png/ShortLogo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Tên môn học</h5>
+                        <p class="card-text">Decription</p>
+                        <a href="#" class="btn btn-primary">Chi tiết bài giảng</a>
+                        <div class="progress" style="margin-top: 5px;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                70%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 card-item">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="~/Content/png/ShortLogo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Tên môn học</h5>
+                        <p class="card-text">Decription</p>
+                        <a href="#" class="btn btn-primary">Chi tiết bài giảng</a>
+                        <div class="progress" style="margin-top: 5px;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                70%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 card-item">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="~/Content/png/ShortLogo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Tên môn học</h5>
+                        <p class="card-text">Decription</p>
+                        <a href="#" class="btn btn-primary">Chi tiết bài giảng</a>
+                        <div class="progress" style="margin-top: 5px;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                70%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 card-item">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="~/Content/png/ShortLogo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Tên môn học</h5>
+                        <p class="card-text">Decription</p>
+                        <a href="#" class="btn btn-primary">Chi tiết bài giảng</a>
+                        <div class="progress" style="margin-top: 5px;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                70%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

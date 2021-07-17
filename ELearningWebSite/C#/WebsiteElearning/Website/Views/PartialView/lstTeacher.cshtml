@@ -1,0 +1,41 @@
+﻿@using Website.Model;
+@{List<Account_Teacher> lstAccT = ViewBag.LstTeacher;}
+@foreach (Account_Teacher item in lstAccT)
+{
+    <tr>
+        <td><span>#</span><span class="idAcc" hidden>@item.id</span></td>
+        <td>
+            <div class="row">
+                <div class="col">
+                    <img class="logo-avt" src="~/Content/img/@item.Img" alt="@item.Img">
+                </div>
+
+                <div class="col">
+                    <div class="row"><span>@item.FullName</span></div>
+                    <div class="row">@item.BrithDay</div>
+                </div>
+            </div>
+        </td>
+        <td>
+            <span>@item.Username</span>
+        </td>
+        <td>
+            <div class="row">
+                <span>@item.Gender</span>
+            </div>
+        </td>
+        <td>
+            <div class="row">
+                <span>@item.Email</span>
+            </div>
+        </td>
+        <td>
+            <div class="row">
+                <span>@item.PhoneNumber</span>
+            </div>
+        </td>
+        <td>
+            <span><a href="#">Chi tiết</a></span>
+        </td>
+    </tr>
+}

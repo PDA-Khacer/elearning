@@ -1,0 +1,11 @@
+.extenalTool-Content {
+    background-color: gray;
+    height: 300px;
+}
+
+.section-course {
+    border-style: solid;
+    border-width: 1px;
+    border-color: silver;
+    box-shadow: 5px 10px 5px wheat;
+}

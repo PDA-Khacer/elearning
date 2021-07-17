@@ -1,0 +1,135 @@
+﻿@using Website.Model;
+@{
+    ViewBag.Title = "view_detail_class_course";
+    Layout = "~/Views/Shared/Layout_student.cshtml";
+}
+<!-- phan breadcrumb -->
+<h1>Tên học phần</h1>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Nhà của tôi</a></li>
+        <li class="breadcrumb-item"><a href="#">Các học phần của tôi</a></li>
+        <li class="breadcrumb-item"><a href="#">Lớp học phần</a></li>
+    </ol>
+</nav>
+
+<div class="section-course">
+    <div class="line"></div>
+    <h1 style="text-align: center;"> Công nghệ web - 2 23204312</h1>
+    <div class="line"></div>
+    <h2>Tài nguyên con người</h2>
+    <div class="row">
+        <div class="col-sm-3">
+            Lựa chọn tài nguyên
+        </div>
+        <div class="col">
+            <select class="form-control" id="selection-humnan-resourse">
+                <option value="dssv">Danh sách sinh viên</option>
+                <option value="dsgv">Danh sách giáo viên</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="container-selection-dssv">
+        <div class="row">
+            <div class="col">
+                <h2>Danh sách sinh viên trong lớp</h2>
+            </div>
+            <div class="col-sm-2 element-right">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalAddS">Thêm</button>
+            </div>
+        </div>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Số thứ tự</th>
+                    <th scope="col">Người dùng</th>
+                    <th scope="col">Mã sinh viên</th>
+                    <th scope="col">Giới tính</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody class="containTableStudent-detailView">
+               
+            </tbody>
+        </table>
+    </div>
+    <div id="container-selection-dsgv">
+        <div class="row">
+            <div class="col">
+                <h2>Danh sách giáo viên trong lớp</h2>
+            </div>
+            <div class="col-sm-2 element-right">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalAddT">Thêm</button>
+            </div>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Số thứ tự</th>
+                    <th scope="col">Người dùng</th>
+                    <th scope="col">Mã giáo viên</th>
+                    <th scope="col">Giới tính</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody class="containTableTeacher-detailView">
+                
+            </tbody>
+        </table>
+    </div>
+    <div id="container-selection-lstLecture">
+        <div class="row">
+            <div class="col">
+                <h2>Danh sách các bài học trong lớp</h2>
+            </div>
+            <div class="col-sm-2 element-right">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalAddLecture">Thêm</button>
+            </div>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Số thứ tự</th>
+                    <th scope="col">Tên bài học</th>
+                    <th scope="col">Số lượng nội dung</th>
+                    <th scope="col">Số lượng sinh viên truy cập</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>1</span></td>
+                    <td>
+                        <div class="row">
+                            <p>Chương 1. Giới thiệu tổng quan về</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <span>4</span>
+                        </div>
+                        <div class="row">
+                            <a href="#">(Xem)</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <span>100</span>
+                        </div>
+                    </td>
+                    <td>
+                        <span><a href="#">Chi tiết</a></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="~/Content/js/admin_classCourse.js"></script>
+

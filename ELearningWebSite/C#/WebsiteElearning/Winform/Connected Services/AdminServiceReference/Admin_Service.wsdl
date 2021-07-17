@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllCourse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllCourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllCourseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllClassCourse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllClassCourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllClassCourseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClassCourse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClassCourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClassCourseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcountInClass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcountInClassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAcountInClassResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllStudent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllStudentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllStudentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllTeacher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllTeacherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllTeacherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddStudentToClassCourse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idAccount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddStudentToClassCourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddStudentToClassCourseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTeacherToClassCourse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idAccount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTeacherToClassCourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTeacherToClassCourseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveStudentToClassCourse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idAccount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveStudentToClassCourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveStudentToClassCourseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveAllStudentToClassCourse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveAllStudentToClassCourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveAllStudentToClassCourseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveTeacherToClassCourse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idAccount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveTeacherToClassCourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveTeacherToClassCourseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveAllTeacherToClassCourse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveAllTeacherToClassCourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveAllTeacherToClassCourseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindStudentInSystem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindStudentInSystemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindStudentInSystemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindTeacherInSystem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindTeacherInSystemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindTeacherInSystemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindStudentInClass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindStudentInClassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindStudentInClassResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindTeacherInClass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idClass" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindTeacherInClassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindTeacherInClassResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCourseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllCourse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCourseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllClassCourseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllClassCourse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllClassCourseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllClassCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClassCourseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClassCourse" />
+  </wsdl:message>
+  <wsdl:message name="GetClassCourseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClassCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAcountInClassSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAcountInClass" />
+  </wsdl:message>
+  <wsdl:message name="GetAcountInClassSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAcountInClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllStudentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllStudent" />
+  </wsdl:message>
+  <wsdl:message name="GetAllStudentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTeacherSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllTeacher" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTeacherSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllTeacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddStudentToClassCourseSoapIn">
+    <wsdl:part name="parameters" element="tns:AddStudentToClassCourse" />
+  </wsdl:message>
+  <wsdl:message name="AddStudentToClassCourseSoapOut">
+    <wsdl:part name="parameters" element="tns:AddStudentToClassCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTeacherToClassCourseSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTeacherToClassCourse" />
+  </wsdl:message>
+  <wsdl:message name="AddTeacherToClassCourseSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTeacherToClassCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveStudentToClassCourseSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveStudentToClassCourse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveStudentToClassCourseSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveStudentToClassCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveAllStudentToClassCourseSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveAllStudentToClassCourse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveAllStudentToClassCourseSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveAllStudentToClassCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveTeacherToClassCourseSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveTeacherToClassCourse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveTeacherToClassCourseSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveTeacherToClassCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveAllTeacherToClassCourseSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveAllTeacherToClassCourse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveAllTeacherToClassCourseSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveAllTeacherToClassCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindStudentInSystemSoapIn">
+    <wsdl:part name="parameters" element="tns:FindStudentInSystem" />
+  </wsdl:message>
+  <wsdl:message name="FindStudentInSystemSoapOut">
+    <wsdl:part name="parameters" element="tns:FindStudentInSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindTeacherInSystemSoapIn">
+    <wsdl:part name="parameters" element="tns:FindTeacherInSystem" />
+  </wsdl:message>
+  <wsdl:message name="FindTeacherInSystemSoapOut">
+    <wsdl:part name="parameters" element="tns:FindTeacherInSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindStudentInClassSoapIn">
+    <wsdl:part name="parameters" element="tns:FindStudentInClass" />
+  </wsdl:message>
+  <wsdl:message name="FindStudentInClassSoapOut">
+    <wsdl:part name="parameters" element="tns:FindStudentInClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindTeacherInClassSoapIn">
+    <wsdl:part name="parameters" element="tns:FindTeacherInClass" />
+  </wsdl:message>
+  <wsdl:message name="FindTeacherInClassSoapOut">
+    <wsdl:part name="parameters" element="tns:FindTeacherInClassResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Admin_ServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCourse">
+      <wsdl:input message="tns:GetAllCourseSoapIn" />
+      <wsdl:output message="tns:GetAllCourseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClassCourse">
+      <wsdl:input message="tns:GetAllClassCourseSoapIn" />
+      <wsdl:output message="tns:GetAllClassCourseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassCourse">
+      <wsdl:input message="tns:GetClassCourseSoapIn" />
+      <wsdl:output message="tns:GetClassCourseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcountInClass">
+      <wsdl:input message="tns:GetAcountInClassSoapIn" />
+      <wsdl:output message="tns:GetAcountInClassSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllStudent">
+      <wsdl:input message="tns:GetAllStudentSoapIn" />
+      <wsdl:output message="tns:GetAllStudentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTeacher">
+      <wsdl:input message="tns:GetAllTeacherSoapIn" />
+      <wsdl:output message="tns:GetAllTeacherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddStudentToClassCourse">
+      <wsdl:input message="tns:AddStudentToClassCourseSoapIn" />
+      <wsdl:output message="tns:AddStudentToClassCourseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTeacherToClassCourse">
+      <wsdl:input message="tns:AddTeacherToClassCourseSoapIn" />
+      <wsdl:output message="tns:AddTeacherToClassCourseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveStudentToClassCourse">
+      <wsdl:input message="tns:RemoveStudentToClassCourseSoapIn" />
+      <wsdl:output message="tns:RemoveStudentToClassCourseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAllStudentToClassCourse">
+      <wsdl:input message="tns:RemoveAllStudentToClassCourseSoapIn" />
+      <wsdl:output message="tns:RemoveAllStudentToClassCourseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTeacherToClassCourse">
+      <wsdl:input message="tns:RemoveTeacherToClassCourseSoapIn" />
+      <wsdl:output message="tns:RemoveTeacherToClassCourseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAllTeacherToClassCourse">
+      <wsdl:input message="tns:RemoveAllTeacherToClassCourseSoapIn" />
+      <wsdl:output message="tns:RemoveAllTeacherToClassCourseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindStudentInSystem">
+      <wsdl:input message="tns:FindStudentInSystemSoapIn" />
+      <wsdl:output message="tns:FindStudentInSystemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindTeacherInSystem">
+      <wsdl:input message="tns:FindTeacherInSystemSoapIn" />
+      <wsdl:output message="tns:FindTeacherInSystemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindStudentInClass">
+      <wsdl:input message="tns:FindStudentInClassSoapIn" />
+      <wsdl:output message="tns:FindStudentInClassSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindTeacherInClass">
+      <wsdl:input message="tns:FindTeacherInClassSoapIn" />
+      <wsdl:output message="tns:FindTeacherInClassSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Admin_ServiceSoap" type="tns:Admin_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCourse">
+      <soap:operation soapAction="http://tempuri.org/GetAllCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClassCourse">
+      <soap:operation soapAction="http://tempuri.org/GetAllClassCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassCourse">
+      <soap:operation soapAction="http://tempuri.org/GetClassCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcountInClass">
+      <soap:operation soapAction="http://tempuri.org/GetAcountInClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllStudent">
+      <soap:operation soapAction="http://tempuri.org/GetAllStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTeacher">
+      <soap:operation soapAction="http://tempuri.org/GetAllTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStudentToClassCourse">
+      <soap:operation soapAction="http://tempuri.org/AddStudentToClassCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTeacherToClassCourse">
+      <soap:operation soapAction="http://tempuri.org/AddTeacherToClassCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveStudentToClassCourse">
+      <soap:operation soapAction="http://tempuri.org/RemoveStudentToClassCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAllStudentToClassCourse">
+      <soap:operation soapAction="http://tempuri.org/RemoveAllStudentToClassCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTeacherToClassCourse">
+      <soap:operation soapAction="http://tempuri.org/RemoveTeacherToClassCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAllTeacherToClassCourse">
+      <soap:operation soapAction="http://tempuri.org/RemoveAllTeacherToClassCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindStudentInSystem">
+      <soap:operation soapAction="http://tempuri.org/FindStudentInSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindTeacherInSystem">
+      <soap:operation soapAction="http://tempuri.org/FindTeacherInSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindStudentInClass">
+      <soap:operation soapAction="http://tempuri.org/FindStudentInClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindTeacherInClass">
+      <soap:operation soapAction="http://tempuri.org/FindTeacherInClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Admin_ServiceSoap12" type="tns:Admin_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCourse">
+      <soap12:operation soapAction="http://tempuri.org/GetAllCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClassCourse">
+      <soap12:operation soapAction="http://tempuri.org/GetAllClassCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassCourse">
+      <soap12:operation soapAction="http://tempuri.org/GetClassCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcountInClass">
+      <soap12:operation soapAction="http://tempuri.org/GetAcountInClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllStudent">
+      <soap12:operation soapAction="http://tempuri.org/GetAllStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTeacher">
+      <soap12:operation soapAction="http://tempuri.org/GetAllTeacher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStudentToClassCourse">
+      <soap12:operation soapAction="http://tempuri.org/AddStudentToClassCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTeacherToClassCourse">
+      <soap12:operation soapAction="http://tempuri.org/AddTeacherToClassCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveStudentToClassCourse">
+      <soap12:operation soapAction="http://tempuri.org/RemoveStudentToClassCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAllStudentToClassCourse">
+      <soap12:operation soapAction="http://tempuri.org/RemoveAllStudentToClassCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTeacherToClassCourse">
+      <soap12:operation soapAction="http://tempuri.org/RemoveTeacherToClassCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAllTeacherToClassCourse">
+      <soap12:operation soapAction="http://tempuri.org/RemoveAllTeacherToClassCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindStudentInSystem">
+      <soap12:operation soapAction="http://tempuri.org/FindStudentInSystem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindTeacherInSystem">
+      <soap12:operation soapAction="http://tempuri.org/FindTeacherInSystem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindStudentInClass">
+      <soap12:operation soapAction="http://tempuri.org/FindStudentInClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindTeacherInClass">
+      <soap12:operation soapAction="http://tempuri.org/FindTeacherInClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Admin_Service">
+    <wsdl:port name="Admin_ServiceSoap" binding="tns:Admin_ServiceSoap">
+      <soap:address location="https://localhost:44300/ServicesWebASMX/Admin_Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Admin_ServiceSoap12" binding="tns:Admin_ServiceSoap12">
+      <soap12:address location="https://localhost:44300/ServicesWebASMX/Admin_Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

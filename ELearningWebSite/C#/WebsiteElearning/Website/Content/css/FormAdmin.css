@@ -1,0 +1,48 @@
+.section-course {
+    border-style: solid;
+    border-width: 1px;
+    border-color: silver;
+    box-shadow: 5px 10px 5px wheat;
+}
+
+.element-left * {
+    float: left;
+}
+
+.element-right * {
+    float: right;
+}
+
+.section-course .row {
+    margin-left: 0px;
+}
+
+.logo-avt {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.onTime-block-color {
+    background-color: chartreuse;
+}
+
+.lateTime-block-color {
+    background-color: rgb(236, 61, 61);
+}
+
+.waitTime-block-color {
+    background-color: rgb(219, 215, 215);
+}
+
+.modal-lg {
+    max-width: 1140px;
+}
+
+.container-modal-searchStudent {
+    max-width: 800px;
+}
+
+.modal-body .row {
+    margin-left: 5px;
+    width: 100%;
+}

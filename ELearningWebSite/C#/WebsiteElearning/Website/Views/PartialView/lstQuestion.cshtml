@@ -1,0 +1,42 @@
+﻿@using Website.Model;
+@{List<Question_MCQ> lstQ = ViewBag.LstQuest; }
+
+@foreach (Question_MCQ item in lstQ)
+{
+    <tr>
+        <td>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox">
+            </div>
+        </td>
+        <td>
+            <div class="row">
+                <span>@item.Header</span>
+            </div>
+        </td>
+        <td>
+            <div class="row">
+                <span>Câu hỏi lựa chọn</span>
+            </div>
+        </td>
+        <td>
+            <div class="row">
+                <span>@item.Content</span>
+            </div>
+        </td>
+        <td>
+            <div class="row">
+                <span>@item.CorrectAnswer</span>
+            </div>
+        </td>
+        <td>
+            <div class="row">
+                <div class="col">
+                    <span><a href="#modal-detail-question" data-toggle="modal" class="btn btn-outline-dark">Chi tiết</a></span>
+                    <button type="button" data-toggle="modal" data-target="#modal-add-question" class="btn btn-outline-info">Sửa</button>
+                </div>
+            </div>
+        </td>
+    </tr>
+}
+

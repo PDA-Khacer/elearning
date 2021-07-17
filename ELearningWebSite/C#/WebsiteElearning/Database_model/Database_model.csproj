@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF961989-F792-41ED-A768-CDE169E70302}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Database_model</RootNamespace>
+    <AssemblyName>Database_model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\BUS_Account.cs" />
+    <Compile Include="BUS\BUS_ClassCourse.cs" />
+    <Compile Include="BUS\Bus_Course.cs" />
+    <Compile Include="BUS\BUS_Lecture.cs" />
+    <Compile Include="DAO\DAO_Account.cs" />
+    <Compile Include="DAO\DAO_Announcement.cs" />
+    <Compile Include="DAO\DAO_Answer.cs" />
+    <Compile Include="DAO\DAO_ClassCoure_Student.cs" />
+    <Compile Include="DAO\DAO_ClassCoure_Teacher.cs" />
+    <Compile Include="DAO\DAO_ClassCourse.cs" />
+    <Compile Include="DAO\DAO_Coment_Topic.cs" />
+    <Compile Include="DAO\DAO_Comment.cs" />
+    <Compile Include="DAO\DAO_ContentLec.cs" />
+    <Compile Include="DAO\DAO_ContentLecComment.cs" />
+    <Compile Include="DAO\DAO_ContentLec_Assignment.cs" />
+    <Compile Include="DAO\DAO_ContentLec_Exam.cs" />
+    <Compile Include="DAO\DAO_ContentLec_Forum.cs" />
+    <Compile Include="DAO\DAO_Course.cs" />
+    <Compile Include="DAO\DAO_FileSelf.cs" />
+    <Compile Include="DAO\DAO_Lecture.cs" />
+    <Compile Include="DAO\DAO_Lecture_Student.cs" />
+    <Compile Include="DAO\DAO_Lecture_Class.cs" />
+    <Compile Include="DAO\DAO_Question.cs" />
+    <Compile Include="DAO\DAO_Question_Matching.cs" />
+    <Compile Include="DAO\DAO_Question_MCQ.cs" />
+    <Compile Include="DAO\DAO_Question_TF.cs" />
+    <Compile Include="DAO\DAO_Student_Assignment.cs" />
+    <Compile Include="DAO\DAO_Student_Exam.cs" />
+    <Compile Include="DAO\DAO_Topic.cs" />
+    <Compile Include="DAO\DAO_TypeFile.cs" />
+    <Compile Include="DB\db_Uitl.cs" />
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\Account_Admin.cs" />
+    <Compile Include="Model\Account_Student.cs" />
+    <Compile Include="Model\Account_Teacher.cs" />
+    <Compile Include="Model\Announcement.cs" />
+    <Compile Include="Model\Answer.cs" />
+    <Compile Include="Model\Answer_Student.cs" />
+    <Compile Include="Model\ClassCourse.cs" />
+    <Compile Include="Model\Lecture_Class.cs" />
+    <Compile Include="Model\Comment.cs" />
+    <Compile Include="Model\ContentLec.cs" />
+    <Compile Include="Model\ContentLec_Assignment.cs" />
+    <Compile Include="Model\ContentLec_Exam.cs" />
+    <Compile Include="Model\ContentLec_Forum.cs" />
+    <Compile Include="Model\Course.cs" />
+    <Compile Include="Model\FileSelf.cs" />
+    <Compile Include="Model\ListModel.cs" />
+    <Compile Include="Model\Question_Matching.cs" />
+    <Compile Include="Model\Question_MCQ.cs" />
+    <Compile Include="Model\Question_TF.cs" />
+    <Compile Include="Model\Student_Exam.cs" />
+    <Compile Include="Model\Lecture.cs" />
+    <Compile Include="Model\Lecture_Student.cs" />
+    <Compile Include="Model\Question.cs" />
+    <Compile Include="Model\Student_Assignment.cs" />
+    <Compile Include="Model\Topic.cs" />
+    <Compile Include="Model\TypeFile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB\db_ELearning.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DB\db_ELearning_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>db_ELearning.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

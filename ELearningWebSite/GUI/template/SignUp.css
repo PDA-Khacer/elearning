@@ -1,0 +1,38 @@
+body,
+html {
+    height: 100%;
+}
+
+.background-login {
+    background-image: url(Titelbild_Fotolia_94620967_S.jpg);
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-login {
+    margin-top: 25%;
+}
+
+.bg-form {
+    background-color: #89c4db;
+    opacity: 0.93;
+    border-radius: 5px;
+}
+
+.form-group {
+    padding-top: 2%;
+}
+
+button {
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+.title-login {
+    color: rgb(46, 38, 38);
+    text-align: center;
+    margin-top: 15px;
+}

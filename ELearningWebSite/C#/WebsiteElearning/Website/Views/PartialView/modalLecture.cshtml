@@ -1,0 +1,637 @@
+﻿<!-- --------------------------------------------------------------------------------------------------------------------- -->
+<!-- modal of from  -->
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+<!-- modal for add Student -->
+<div class="modal fade" id="modalAddS" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="myLargeModalLabel">Thêm sinh viên vào lớp học phần</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row container-modal-search-student">
+                    <div class="col-sm-2">
+                        <label for="formGroupExampleInput">Tìm kiếm sinh viên</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="findStudentInSystem-tb" placeholder="Điền thông tin">
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Tên
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Mã
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Lớp
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    ...
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" id="findStudent-btn" class="btn btn-info form-control"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="row container-model-result-search-student">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Danh sách Sinh viên tương ứng</h2>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="row element-right">
+                                <button type="button" id="modal-addstudent-btn-add" class="btn btn-success form-control" disabled>Thêm vào lớp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td scope="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="modal-student-search-allCheck">
+                                    </div>
+                                </td>
+                                <th scope="col">Người dùng</th>
+                                <th scope="col">Mã sinh viên</th>
+                                <th scope="col">Giới tính</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Số điện thoại</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="result-find-student-modal">
+                            
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="row container-model-student-in-class">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Danh sách Sinh viên có trong lớp</h2>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="row element-right">
+                                <button type="button" id="modal-addstudent-btn-del" class="btn btn-warning form-control" disabled>Xóa khỏi lớp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td scope="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="modal-student-resultFind-allCheck">
+                                    </div>
+                                </td>
+                                <th scope="col">Người dùng</th>
+                                <th scope="col">Mã sinh viên</th>
+                                <th scope="col">Giới tính</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Số điện thoại</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="containTableStudent-detailView-modal">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tắt</button>
+                <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+<!-- modal for add Teacher -->
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+<div class="modal fade" id="modalAddT" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="myLargeModalLabel">Thêm giáo viên vào lớp học phần</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row container-modal-search-teacher">
+                    <div class="col-sm-2">
+                        <label for="formGroupExampleInput">Tìm kiếm giáo viên</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="findTeacher-tb" placeholder="Điền thông tin">
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Tên
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Mã
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Khoa
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Bộ môn
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" id="findTeacher-btn" class="btn btn-info form-control" ><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="row container-model-result-search-teacher">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Danh sách giáo viên tương ứng</h2>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="row element-right">
+                                <button type="button" class="btn btn-success form-control" id="modal-search-teacher-btn-add" disabled>Thêm vào lớp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td scope="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="modal-search-teacher-checkbox-all">
+                                    </div>
+                                </td>
+                                <th scope="col">Người dùng</th>
+                                <th scope="col">Mã giáo viên</th>
+                                <th scope="col">Giới tính</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Số điện thoại</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="result-find-teacher-modal">
+                           
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="row container-model-teacher-in-class">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Danh sách giáo viên có trong lớp</h2>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="row element-right">
+                                <button type="button" class="btn btn-warning form-control" id="modal-result-teacher-btn-del" disabled>Xóa khỏi lớp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td scope="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="modal-result-teacher-checkbox-all">
+                                    </div>
+                                </td>
+                                <th scope="col">Người dùng</th>
+                                <th scope="col">Mã giáo viên</th>
+                                <th scope="col">Giới tính</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Số điện thoại</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="containTableTeacher-detailView-modal">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tắt</button>
+                <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+<!-- modal for add Lecture -->
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+<div class="modal fade" id="modalAddLecture" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="myLargeModalLabel">Thêm bài học vào lớp học phần</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        Lựa chọn công cụ tìm kiếm
+                    </div>
+                    <div class="col">
+                        <select class="form-control" id="selection-resourse-finding">
+                            <option value="tkbh">Tìm kiếm bài học</option>
+                            <option value="tkbh2">Tìm kiếm bài học thông qua giáo viên</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="row container-modal-search-teacher-lec">
+                    <div class="col-sm-2">
+                        <label for="formGroupExampleInput">Tìm kiếm giáo viên</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Điền thông tin">
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Tên
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Mã
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Khoa
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Bộ môn
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-info form-control" data-dismiss="modal"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="row container-model-result-search-teacher-lec">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Danh sách giáo viên tương ứng</h2>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Giáo viên</th>
+                                <th scope="col">Mã giáo viên</th>
+                                <th scope="col">Bộ môn</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="row">
+                                        <div class="col">
+                                            <img class="logo-avt" src="/avt.png" alt="avt">
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="row"><span>Nguyễn Văn A</span></div>
+                                            <div class="row">20/10/2000</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <span>1715002</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        Công nghệ phần mềm
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-outline-dark" data-toggle="collapse" data-target="#collapseListLecture" aria-expanded="false" aria-controls="collapseListLecture">Chọn học phần</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="collapse" id="collapseListLecture">
+                                <td colspan="4">
+                                    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+                                    <!-- danh sách các bài học -->
+                                    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="gridRadios1">
+                                                    Hiển thị hết các bài học trong đó
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    Hiển thị tương ứng với môn học
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col element-right">
+                                            <button type="button" class="btn btn-outline-success" id="modal-list-lecture-btn-add" disabled>Thêm bài học</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <td scope="col">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="modal-search-teacher-checkbox-all-lec">
+                                                        </div>
+                                                    </td>
+                                                    <th scope="col">Tên bài học</th>
+                                                    <th scope="col">Môn học</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input modal-search-teacher-checkbox-lec" type="checkbox">
+                                                        </div>
+                                                    </td>
+                                                    <td scope="row">Xây dựng và đào tạo</td>
+                                                    <td scope="row">Công nghệ thông tin</td>
+                                                    <td scope="row">
+                                                        <a href="#">Thêm</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row container-modal-search-lecture">
+                    <div class="col-sm-2">
+                        <label for="formGroupExampleInput">Tìm kiếm bài học</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Điền thông tin">
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Tên
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Môn học
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-info form-control" data-dismiss="modal"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="row container-model-result-search-lecture">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Danh sách bài học tương ứng</h2>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="row element-right">
+                                <button type="button" class="btn btn-success form-control" id="modal-list-lecture-search-btn-add" disabled>Thêm vào lớp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td scope="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="modal-search-lecture-checkbox-all-lec">
+                                    </div>
+                                </td>
+                                <th scope="col">Tên bài học</th>
+                                <th scope="col">Giáo viên</th>
+                                <th scope="col">Tên môn học</th>
+                                <th scope="col">Ngày tạo</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input modal-search-lecture-checkbox-lec" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <span>Xây dựng và đào tạo</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col">
+                                            <img class="logo-avt" src="/avt.png" alt="avt">
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="row"><span>Nguyễn Văn A</span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <span>Toán rời rạc</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        8/16/2020 14:10 AM
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><span><a href="#">Chi tiết</a></span></div>
+                                        <div class="col"><span><a href="#">Thêm</a></span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="line"></div>
+                <div class="row container-model-lecture-in-class">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Danh sách bài học có trong lớp</h2>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="row element-right">
+                                <button type="button" class="btn btn-warning form-control" id="modal-list-lecture-class-btn-add" disabled>Xóa khỏi lớp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td scope="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="modal-class-lecture-checkbox-all-lec">
+                                    </div>
+                                </td>
+                                <th scope="col">Tên bài học</th>
+                                <th scope="col">Giáo viên</th>
+                                <th scope="col">Tên môn học</th>
+                                <th scope="col">Ngày tạo</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input modal-class-lecture-checkbox-lec" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <span>Xây dựng và đào tạo</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col">
+                                            <img class="logo-avt" src="/avt.png" alt="avt">
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="row"><span>Nguyễn Văn A</span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <span>Toán rời rạc</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        8/16/2020 14:10 AM
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><span><a href="#">Chi tiết</a></span></div>
+                                        <div class="col"><span><a href="#">Xóa</a></span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tắt</button>
+                <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------- modal lv 2  ------------------------------ -->
+<div class="modal" id="myModal2" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">2nd Modal title</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="container"></div>
+            <div class="modal-body">
+                Content for the dialog / modal goes here. Content for the dialog / modal goes here. Content for the dialog / modal goes here. Content for the dialog / modal goes here. Content for the dialog / modal goes here.
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal" class="btn">Close</a>
+                <a href="#" class="btn btn-primary">Save changes</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Modal -->
+
+<script src="~/Content/js/model_js.js"></script>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Hệ thống học trực tuyến</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="detailLecture.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Hệ thống học trực tuyến</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Thanh quản lý</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nhà của tôi</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Trang chủ hệ thống</a>
+                        </li>
+                        <li>
+                            <a href="#">Trang cá nhân</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Lịch học</a>
+
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Học phần của tôi</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="detailCourse.html">Học phần 1</a>
+                        </li>
+                        <li>
+                            <a href="detailCourse.html">Học phần 2</a>
+                        </li>
+                        <li>
+                            <a href="detailCourse.html">Học phần 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="#" class="article">Back to article</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+            <!-- phan logo -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div id="logo-page">
+                        <img src="bannerlogo.png" style="width:411px" alt="logo">
+                    </div>
+
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Đăng xuất</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Thông báo <span class="badge badge-success">4</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin nhắn <span class="badge badge-success">4</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- phan breadcrumb -->
+            <h1>Tên học phần</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Nhà của tôi</a></li>
+                    <li class="breadcrumb-item"><a href="#">Các học phần của tôi</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Lớp học phần</li>
+                </ol>
+            </nav>
+            <div class="contain">
+                <!-- Session -->
+                <div class="section-course">
+                    <div class="line-soid"></div>
+                    <div class="for-teacher-acc row ">
+                        <div class="col element-right">
+                            <a class="header-element" href="#">Sửa thông tin cơ bản</a>
+
+                        </div>
+                    </div>
+                    <h1 style="text-align: center;">Bài 1. Giới thiệu về HTML</h1>
+                    <p>Buổi đầu các em nhớ chuẩn bị đầy đủ.</p>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <p>Thời gian bắt đầu mở bài học</p>
+                        </div>
+                        <div class="col">
+                            <span>10/10/2020</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <p>Thời gian Kết thúc bài học</p>
+                        </div>
+                        <div class="col">
+                            <span>10/10/9999</span>
+                        </div>
+                    </div>
+
+                    <div class="line-soid"></div>
+                    <!-- ------------------------------------------------------------------------------------- -->
+                    <!-- chuyển role -->
+                    <div class="form-group">
+                        <label for="select-change-role-view">Chọn giao diện</label>
+                        <select class="form-control" id="select-change-role-view">
+                          <option value="sv">Sinh viên</option>
+                          <option value="gv">Giáo viên</option>
+                        </select>
+                    </div>
+                    <div class="line-soid"></div>
+                    <!-- ------------------------------------------------------------------------------------- -->
+                    <div class="for-teacher-acc">
+                        <div class="row">
+                            <div class="col element-right">
+                                <a class="header-element" href="#modal-add-resource" data-toggle="modal">Thêm tài nguyên</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Element -->
+                    <div class="content-section-course">
+                        <div class="element-section">
+                            <!-- File -->
+                            <div class="row">
+                                <div class="col element-left">
+                                    <img src="png/mycollection/png/001-files.png" class="logo-element" alt="">
+                                    <a class="header-element" href="#">Tài liệu về HTML</a>
+                                </div>
+                                <div class="for-student-acc">
+                                    <div class="col element-right">
+                                        <img src="png/box.png" onclick="chageImage(this)" class="logo-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="for-teacher-acc">
+                                    <div class="col element-right">
+                                        <a class="header-element" href="#">Sửa</a>
+                                        <a class="header-element" href="#">Xóa</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <h6> Tài liệu là phiên bản cũ, các em có thể đọc và tìm hiểu thêm ở W3</h6>
+                            </div>
+                            <!-- Extent tool -->
+                            <div class="row">
+                                <div class="col element-left">
+                                    <img src="png/mycollection/png/017-repair-tools.png" class="logo-element" alt="">
+                                    <a class="header-element" href="/detailExtenalTool.html">Link tải phần mềm Edit</a>
+                                </div>
+                                <div class="for-student-acc">
+                                    <div class="col element-right">
+                                        <img src="png/box.png" onclick="chageImage(this)" class="logo-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="for-teacher-acc">
+                                    <div class="col element-right">
+                                        <a class="header-element" href="#">Sửa</a>
+                                        <a class="header-element" href="#">Xóa</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h6> Phần mềm chỉ chạy trên hệ điều hành 64bit.</h6>
+                            </div>
+                            <!-- Forum -->
+                            <div class="row">
+                                <div class="col element-left">
+                                    <img src="png/mycollection/png/018-group.png" class="logo-element" alt="">
+                                    <a class="header-element" href="/detailForum.html">Diễn đàn</a>
+                                </div>
+                                <div class="for-student-acc">
+                                    <div class="col element-right">
+                                        <img src="png/box.png" onclick="chageImage(this)" class="logo-element" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="for-teacher-acc">
+                                    <div class="col element-right">
+                                        <a class="header-element" href="#">Sửa</a>
+                                        <a class="header-element" href="#">Xóa</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h6> Trao đổi nội dung bài học</h6>
+                            </div>
+                            <!-- Exam -->
+                            <div class="row">
+                                <div class="col element-left">
+                                    <img src="png/mycollection/png/016-exam-2.png" class="logo-element" alt="">
+                                    <a class="header-element" href="/detailExam.html">Kiểm tra</a>
+                                </div>
+                                <div class="for-student-acc">
+                                    <div class="col element-right">
+                                        <img src="png/box.png" onclick="chageImage(this)" class="logo-element" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="for-teacher-acc">
+                                    <div class="col element-right">
+                                        <a class="header-element" href="#">Sửa</a>
+                                        <a class="header-element" href="#">Xóa</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h6> Kiểm tra về các thẻ html</h6>
+                            </div>
+                            <!-- Homework -->
+                            <div class="row">
+                                <div class="col element-left">
+                                    <img src="png/mycollection/png/007-homework-1.png" class="logo-element" alt="">
+                                    <a class="header-element" href="/detailAssignment.html">Bài tập về nhà</a>
+                                </div>
+                                <div class="for-student-acc">
+                                    <div class="col element-right">
+                                        <img src="png/box.png" onclick="chageImage(this)" class="logo-element" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="for-teacher-acc">
+                                    <div class="col element-right">
+                                        <a class="header-element" href="#">Sửa</a>
+                                        <a class="header-element" href="#">Xóa</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h6> Quá hạn không nhận bài !</h6>
+                            </div>
+                            <!-- Video -->
+                            <div class="row">
+                                <div class="col element-left">
+                                    <img src="png/video.png" class="logo-element" alt="">
+                                    <a class="header-element" href="#">Clip bài giảng</a>
+                                </div>
+                                <div class="for-student-acc">
+                                    <div class="col element-right">
+                                        <img src="png/box.png" onclick="chageImage(this)" class="logo-element" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="for-teacher-acc">
+                                    <div class="col element-right">
+                                        <a class="header-element" href="#">Sửa</a>
+                                        <a class="header-element" href="#">Xóa</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h6> Bài 1. Giới thiệu về html.mp4</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--                                               Modal                                   -->
+    <!--                                               Modal add resource                      -->
+    <div class="modal fade" id="modal-add-resource" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thêm tài nguyên</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <span>Chọn tài nguyên cần thêm vào bài học:</span>
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio1">
+                                        <img src="png/mycollection/png/001-files.png" class="logo-element" alt=""> Thêm tài liệu cho sinh viên
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio2">
+                                        <img src="png/mycollection/png/017-repair-tools.png" class="logo-element" alt=""> Thêm công cụ
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">
+                                        <img src="png/mycollection/png/018-group.png" class="logo-element" alt=""> Thêm diễn đàn
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio4">
+                                        <img src="png/mycollection/png/016-exam-2.png" class="logo-element" alt=""> Thêm bài thi
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio5">
+                                        <img src="png/mycollection/png/007-homework-1.png" class="logo-element" alt=""> Thêm bài tập
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio6">
+                                        <img src="png/video.png" class="logo-element" alt=""> Thêm video
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary">Thêm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------- -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+
+
+            // init
+            $(document).find(".for-teacher-acc").each(function(index, item) {
+                $(item).attr("hidden", true);
+            });
+
+            $("#select-change-role-view").change(function(e) {
+                e.preventDefault();
+                if ($(this).val() == "sv") {
+                    $(document).find(".for-student-acc").each(function(index, item) {
+                        $(item).attr("hidden", false);
+                    });
+                    $(document).find(".for-teacher-acc").each(function(index, item) {
+                        $(item).attr("hidden", true);
+                    });
+                } else {
+                    $(document).find(".for-student-acc").each(function(index, item) {
+                        $(item).attr("hidden", true);
+                    });
+                    $(document).find(".for-teacher-acc").each(function(index, item) {
+                        $(item).attr("hidden", false);
+                    });
+                }
+            });
+        });
+
+        function chageImage(element) {
+            var nameFile = element.src;
+            var nameFileArray = nameFile.split('/');
+            var n = nameFileArray.length
+            if (nameFileArray[n - 1] == 'box.png') {
+                nameFile = 'checkbox.png';
+            } else {
+                nameFile = 'box.png';
+            }
+            element.src = element.src.replace(nameFileArray[n - 1], nameFile);
+        }
+    </script>
+
+</body>
+
+</html>

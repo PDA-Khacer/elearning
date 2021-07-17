@@ -1,0 +1,111 @@
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\DB\db_ELearning.mdf
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\DB\db_ELearning_log.ldf
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Website.dll.config
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Website.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Website.pdb
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\csc.exe
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\csc.exe.config
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\csc.rsp
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\csi.exe
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\csi.rsp
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.AppContext.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.Collections.Immutable.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.IO.FileSystem.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.Reflection.Metadata.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\vbc.exe
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\vbc.exe.config
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\vbc.rsp
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\VBCSCompiler.exe
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\VBCSCompiler.exe.config
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Database_model.exe
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Microsoft.Web.Infrastructure.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Newtonsoft.Json.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Helpers.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Mvc.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Razor.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.Deployment.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.Razor.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Database_model.pdb
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Database_model.exe.config
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Newtonsoft.Json.xml
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Razor.xml
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.xml
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.Deployment.xml
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.Razor.xml
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Helpers.xml
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Mvc.xml
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.csproj.CoreCompileInputs.cache
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.csproj.CopyComplete
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.dll
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.pdb
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\DB\db_ELearning.mdf
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\DB\db_ELearning_log.ldf
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Website.dll.config
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Website.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Website.pdb
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\csc.exe
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\csc.exe.config
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\csc.rsp
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\csi.exe
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\csi.rsp
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.AppContext.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.Collections.Immutable.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.IO.FileSystem.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\System.Reflection.Metadata.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\vbc.exe
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\vbc.exe.config
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\vbc.rsp
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\VBCSCompiler.exe
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\roslyn\VBCSCompiler.exe.config
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Database_model.exe
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Microsoft.Web.Infrastructure.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Newtonsoft.Json.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Helpers.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Mvc.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Razor.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.Deployment.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.Razor.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Database_model.pdb
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Database_model.exe.config
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Newtonsoft.Json.xml
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Razor.xml
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.xml
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.Deployment.xml
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Webpages.Razor.xml
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Helpers.xml
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Mvc.xml
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.csprojAssemblyReference.cache
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.csproj.CoreCompileInputs.cache
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.csproj.CopyComplete
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.dll
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.pdb

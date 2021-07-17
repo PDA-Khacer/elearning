@@ -1,0 +1,56 @@
+﻿
+<div class="modal fade" id="modal-add-resource" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Thêm tài nguyên</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <span>Chọn tài nguyên cần thêm vào bài học:</span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">
+                                    <img src="~/Content/img/001-files.png" class="logo-element" alt=""> Thêm tài liệu cho sinh viên
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">
+                                    <img src="~/Content/img/017-repair-tools.png" class="logo-element" alt=""> Thêm công cụ
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio3">
+                                    <img src="~/Content/img/018-group.png" class="logo-element" alt=""> Thêm diễn đàn
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio4">
+                                    <img src="~/Content/img/016-exam-2.png" class="logo-element" alt=""> Thêm bài thi
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio5">
+                                    <img src="~/Content/img/007-homework-1.png" class="logo-element" alt=""> Thêm bài tập
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" id="AddBTN" class="btn btn-primary" onclick="location.href='@Url.Action("ViewAddExam", "Lecture")'">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>

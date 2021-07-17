@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Hệ thống học trực tuyến</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="/style5.css">
+    <link rel="stylesheet" href="FormAdmin.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Hệ thống học trực tuyến</h3>
+            </div>
+            <ul class="list-unstyled components">
+                <p>Thanh quản lý</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nhà của tôi</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Trang chủ hệ thống</a>
+                        </li>
+                        <li>
+                            <a href="#">Trang cá nhân</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Lịch học</a>
+
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Học phần của tôi</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="/detailCourse.html">Học phần 1</a>
+                        </li>
+                        <li>
+                            <a href="/detailCourse.html">Học phần 2</a>
+                        </li>
+                        <li>
+                            <a href="/detailCourse.html">Học phần 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="#" class="article">Back to article</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+            <!-- phan logo -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div id="logo-page">
+                        <img src="/bannerlogo.png" style="width:411px" alt="logo">
+                    </div>
+
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Đăng xuất</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Thông báo <span class="badge badge-success">4</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin nhắn <span class="badge badge-success">4</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- phan breadcrumb -->
+            <h1>Tên học phần</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Nhà của tôi</a></li>
+                    <li class="breadcrumb-item"><a href="#">Các học phần của tôi</a></li>
+                    <li class="breadcrumb-item"><a href="#">Lớp học phần</a></li>
+                    <li class="breadcrumb-item"><a href="#">Bài học</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Extend tool</li>
+                </ol>
+            </nav>
+            <div class="section-course">
+                <div class="line-soid"></div>
+                <h1 style="text-align: center;">Bài 1. Giới thiệu về HTML</h1>
+                <div class="line"></div>
+                <h1 style="text-align: center;"> Bài kiểm tra</h1>
+                <p style="text-align: center;">Kiểm tra về các thẻ HTML</p>
+                <div class="line"></div>
+                <h2>Danh sách bài tập của sinh viên</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Số thứ tự</th>
+                            <th scope="col">Người dùng</th>
+                            <th scope="col">Mã sinh viên</th>
+                            <th scope="col">Thời gian bắt đầu làm bài</th>
+                            <th scope="col">Thời gian làm bài</th>
+                            <th scope="col">Số câu đúng</th>
+                            <th scope="col">Điểm</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <samp>1</samp>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="logo-avt" src="/avt.png" alt="avt">
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="row"><span>Nguyễn Văn A</span></div>
+                                        <div class="row">20/10/2000</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>00000000</span>
+                            </td>
+                            <td class="onTime-block-color">
+                                <span>10/18/2020 04:00 PM</span>
+                            </td>
+                            <td class="onTime-block-color">
+                                <span>1 hours</span>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <span>5</span>
+                                    <span>/20</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <span>40</span>
+                                    <span>/100</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <a href="#">Xem chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <samp>2</samp>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="logo-avt" src="/avt.png" alt="avt">
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="row"><span>Nguyễn Văn A</span></div>
+                                        <div class="row">20/10/2000</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>00000001</span>
+                            </td>
+                            <td class="waitTime-block-color">
+                                <span>Chưa làm bài</span>
+                            </td>
+                            <td class="waitTime-block-color">
+                                <span>Chưa làm bài</span>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <span>-1</span>
+                                    <span>/20</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <span>-1</span>
+                                    <span>/100</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <a href="#">Xem chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

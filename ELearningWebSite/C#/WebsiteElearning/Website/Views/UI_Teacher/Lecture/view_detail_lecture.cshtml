@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewBag.Title = "view_detail_lecture";
+    Layout = "~/Views/Shared/Layout_student.cshtml";
+}
+<link href="~/Content/css/detailLecture.css" rel="stylesheet" />
+<h1>Tên học phần</h1>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Nhà của tôi</a></li>
+        <li class="breadcrumb-item"><a href="#">Các học phần của tôi</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Lớp học phần</li>
+    </ol>
+</nav>
+<div class="contain">
+    <!-- Session -->
+    <div class="section-course">
+        <div class="line-soid"></div>
+        <div class="for-teacher-acc row ">
+            <div class="col element-right">
+                <a class="header-element" href="#">Sửa thông tin cơ bản</a>
+
+            </div>
+        </div>
+        <h1 style="text-align: center;">Bài 1. Giới thiệu về HTML</h1>
+        <p>Buổi đầu các em nhớ chuẩn bị đầy đủ.</p>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Thời gian bắt đầu mở bài học</p>
+            </div>
+            <div class="col">
+                <span>10/10/2020</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Thời gian Kết thúc bài học</p>
+            </div>
+            <div class="col">
+                <span>10/10/9999</span>
+            </div>
+        </div>
+
+        <div class="line-soid"></div>
+        <!-- ------------------------------------------------------------------------------------- -->
+        <div class="for-teacher-acc">
+            <div class="row">
+                <div class="col element-right">
+                    <a class="header-element" href="#modal-add-resource" data-toggle="modal">Thêm tài nguyên</a>
+                </div>
+            </div>
+        </div>
+        <!-- Element -->
+        <div class="content-section-course">
+            <div class="element-section">
+                <!-- File -->
+                <div class="row">
+                    <div class="col element-left">
+                        <img src="~/Content/img/001-files.png" class="logo-element" alt="">
+                        <a class="header-element" href="#">Tài liệu về HTML</a>
+                    </div>
+                    <div class="for-teacher-acc">
+                        <div class="col element-right">
+                            <a class="header-element" href="#">Sửa</a>
+                            <a class="header-element" href="#">Xóa</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h6> Tài liệu là phiên bản cũ, các em có thể đọc và tìm hiểu thêm ở W3</h6>
+                </div>
+                <!-- Extent tool -->
+                <div class="row">
+                    <div class="col element-left">
+                        <img src="~/Content/img/017-repair-tools.png" class="logo-element" alt="">
+                        <a class="header-element" href="/detailExtenalTool.html">Link tải phần mềm Edit</a>
+                    </div>
+
+                    <div class="for-teacher-acc">
+                        <div class="col element-right">
+                            <a class="header-element" href="#">Sửa</a>
+                            <a class="header-element" href="#">Xóa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6> Phần mềm chỉ chạy trên hệ điều hành 64bit.</h6>
+                </div>
+                <!-- Forum -->
+                <div class="row">
+                    <div class="col element-left">
+                        <img src="~/Content/img/018-group.png" class="logo-element" alt="">
+                        <a class="header-element" href="/detailForum.html">Diễn đàn</a>
+                    </div>
+
+
+                    <div class="for-teacher-acc">
+                        <div class="col element-right">
+                            <a class="header-element" href="#">Sửa</a>
+                            <a class="header-element" href="#">Xóa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6> Trao đổi nội dung bài học</h6>
+                </div>
+                <!-- Exam -->
+                <div class="row">
+                    <div class="col element-left">
+                        <img src="~/Content/img/016-exam-2.png" class="logo-element" alt="">
+                        <a class="header-element" href="/detailExam.html">Kiểm tra</a>
+                    </div>
+
+                    <div class="for-teacher-acc">
+                        <div class="col element-right">
+                            <a class="header-element" href="#">Sửa</a>
+                            <a class="header-element" href="#">Xóa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6> Kiểm tra về các thẻ html</h6>
+                </div>
+                <!-- Homework -->
+                <div class="row">
+                    <div class="col element-left">
+                        <img src="~/Content/img/007-homework-1.png" class="logo-element" alt="">
+                        <a class="header-element" href="/detailAssignment.html">Bài tập về nhà</a>
+                    </div>
+
+                    <div class="for-teacher-acc">
+                        <div class="col element-right">
+                            <a class="header-element" href="#">Sửa</a>
+                            <a class="header-element" href="#">Xóa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6> Quá hạn không nhận bài !</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Content/js/teacher_lecture.js"></script>

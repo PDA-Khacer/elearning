@@ -1,0 +1,60 @@
+﻿@using Website.Model;
+@{
+    ViewBag.Title = "view_list_class_coures";
+    Layout = "~/Views/Shared/Layout_student.cshtml";
+    List<ClassCourse> lstCC = ViewBag.listClassCoures.classCourses;
+}
+
+<h2>Danh sách các lớp học phần có trong hế thống</h2>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" class="table-info">#</th>
+                <th scope="col" class="table-info">Mã học phần</th>
+                <th scope="col" class="table-info">Tên học phần</th>
+                <th scope="col" class="table-info">Tài nguyên</th>
+                <th scope="col" class="table-info">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (lstCC == null)
+            {
+                <tr>
+                    <th scope="row">1</th>
+                    <td>test</td>
+                    <td>Test</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-dark">Chi tiết</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Sửa</button>
+                        <button type="button" class="btn btn-outline-danger">Xóa</button>
+                    </td>
+                </tr>
+            }
+            else
+            {
+                foreach (ClassCourse item in lstCC)
+                {
+                    <tr>
+                        <th scope="row">#</th>
+                        <td>@item.CodeClass</td>
+                        <td>@item.NameClass</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-dark">Chi tiết</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-warning">Sửa</button>
+                            <button type="button" class="btn btn-outline-danger">Xóa</button>
+                        </td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+</div>
+

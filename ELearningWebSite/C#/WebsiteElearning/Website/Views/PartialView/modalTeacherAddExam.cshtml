@@ -1,0 +1,694 @@
+﻿<!-- --------------------------------------------------------------------------------------------------------- -->
+<!--                                                      modal                                                -->
+<!-- --------------------------------------------------------------------------------------------------------- -->
+<!--                                            modal add question                                             -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Chọn câu hỏi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label for="modal-input-content-quest" class="col col-form-label">Nhập nội dụng câu hỏi</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="modal-input-content-quest" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="row">
+                    <div class="col-sm-2 line-right">
+                        <div class="contain-chose-type-quest">
+                            <span>Các câu hỏi</span>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked data-toggle="collapse" data-target="#collapse-quest-mcq">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Câu hỏi lựa chọn
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" data-toggle="collapse" data-target="#collapse-quest-tf">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    True/False
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" data-toggle="collapse" data-target="#collapse-quest-mapping">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Mapping
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" data-toggle="collapse" data-target="#collapse-quest-short">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Câu trả lời ngắn
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" data-toggle="collapse" data-target="#collapse-quest-num">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Câu trả lời số
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" data-toggle="collapse" data-target="#collapse-quest-essay">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Essay
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="accordion" id="accordion-modal-ans">
+                            <div class="card">
+                                <div id="collapse-quest-mcq" class="collapse show" data-parent="#accordion-modal-ans">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <span>Chọn số lượng câu trả lời</span>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-control" id="mcq-select-num-ans">
+                                                    <option selected value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 1</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <span>Đáp án</span>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input check-ans" id="init-mcq-ans" type="radio" name="mcq-true-answer" checked>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 2</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control " rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <span>Đáp án</span>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input check-ans" type="radio" name="mcq-true-answer">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer3" hidden>
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 3</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <span>Đáp án</span>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input check-ans" type="radio" name="mcq-true-answer">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer4" hidden>
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 4</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <span>Đáp án</span>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input check-ans" type="radio" name="mcq-true-answer">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer5" hidden>
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 5</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <span>Đáp án</span>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input check-ans" type="radio" name="mcq-true-answer">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer6" hidden>
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 6</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <span>Đáp án</span>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input check-ans" type="radio" name="mcq-true-answer">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapse-quest-tf" class="collapse" data-parent="#accordion-modal-ans">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <span>Chọn số lượng câu trả lời</span>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-control" id="tf-select-num-ans">
+                                                    <option selected value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 1</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer1" checked>
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Đúng
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer1">
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Sai
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 2</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control " rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer2" checked>
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Đúng
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer2">
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Sai
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer3-tf" hidden>
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 3</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer3" checked>
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Đúng
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer3">
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Sai
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer4-tf" hidden>
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 4</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer4" checked>
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Đúng
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer4">
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Sai
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer5-tf" hidden>
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 5</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer5" checked>
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Đúng
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer5">
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Sai
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer6-tf" hidden>
+                                            <div class="col-sm-3">
+                                                <span>Câu hỏi trả lời 6</span>
+                                            </div>
+                                            <div class="col">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer6" checked>
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Đúng
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input check-ans" type="radio" name="tf-true-answer6">
+                                                            <label class="form-check-label" for="tf-true-answer1">
+                                                                Sai
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapse-quest-mapping" class="collapse" data-parent="#accordion-modal-ans">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <span>Chọn số lượng câu trả lời</span>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-control" id="mapping-select-num-ans">
+                                                    <option selected value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>a</option>
+                                                    <option>b</option>
+                                                    <option>c</option>
+                                                    <option>d</option>
+                                                    <option>e</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>a</option>
+                                                    <option>b</option>
+                                                    <option>c</option>
+                                                    <option>d</option>
+                                                    <option>e</option>
+                                                    <option>f</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer3-mapping" hidden>
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>a</option>
+                                                    <option>b</option>
+                                                    <option>c</option>
+                                                    <option>d</option>
+                                                    <option>e</option>
+                                                    <option>f</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer4-mapping" hidden>
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>a</option>
+                                                    <option>b</option>
+                                                    <option>c</option>
+                                                    <option>d</option>
+                                                    <option>e</option>
+                                                    <option>f</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer5-mapping" hidden>
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>a</option>
+                                                    <option>b</option>
+                                                    <option>c</option>
+                                                    <option>d</option>
+                                                    <option>e</option>
+                                                    <option>f</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="contain-answer6-mapping" hidden>
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-control" id="">
+                                                    <option>a</option>
+                                                    <option>b</option>
+                                                    <option>c</option>
+                                                    <option>d</option>
+                                                    <option>e</option>
+                                                    <option>f</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <textarea class="form-control" rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapse-quest-short" class="collapse" data-parent="#accordion-modal-ans">
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <label for="modal-input-content-quest" class="col col-form-label">Nhập đáp án của câu hỏi</label>
+                                            <div class="col-sm-9">
+                                                <textarea class="form-control" id="modal-input-content-quest" rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapse-quest-num" class="collapse" data-parent="#accordion-modal-ans">
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <label for="modal-input-content-quest" class="col col-form-label">Nhập đáp án của câu hỏi</label>
+                                            <div class="col-sm-9">
+                                                <textarea class="form-control" id="modal-input-content-quest" rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapse-quest-essay" class="collapse" data-parent="#accordion-modal-ans">
+                                    <div class="card-body">
+                                        6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy bỏ</button>
+                <button type="button" class="btn btn-primary">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--                                            modal detail quest                                             -->
+<div class="modal fade" id="modal-detail-question" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Chi tiết câu hỏi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label for="modal-input-content-quest" class="col col-form-label">Nội dụng câu hỏi</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="modal-input-content-quest" rows="2" readonly>XML là gì ?</textarea>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <span>Câu trả lời 1</span>
+                    </div>
+                    <div class="col">
+                        <textarea class="form-control" rows="2" readonly>XML (viết tắt từ tiếng Anh: eXtensible Markup Language, tức "Ngôn ngữ đánh dấu mở rộng") là ngôn ngữ đánh dấu với mục đích chung do W3C đề nghị, để tạo ra các ngôn ngữ đánh dấu khác.
+                                Đây là một tập con đơn giản của SGML, có khả năng mô tả nhiều loại dữ liệu khác nhau. Mục đích chính của XML là đơn giản hóa việc chia sẻ dữ liệu giữa các hệ thống khác nhau, đặc biệt là các hệ thống được kết nối với Internet.
+                                Các ngôn ngữ dựa trên XML (Ví dụ: RDF, RSS, MathML, XHTML, SVG, GML và cXML) được định nghĩa theo cách thông thường, cho phép các chương trình sửa đổi và kiểm tra hợp lệ bằng các ngôn ngữ này mà không cần có hiểu biết trước về hình thức của chúng.</textarea>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="row">
+                            <span>Đáp án</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <span>Câu trả lời 2</span>
+                    </div>
+                    <div class="col">
+                        <textarea class="form-control " rows="2" readonly>HTML (viết tắt của từ Hypertext Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. 
+                                Cùng với CSS và JavaScript, HTML là một trong những ngôn ngữ quan trọng trong lĩnh vực thiết kế website. HTML được định nghĩa như là một ứng dụng đơn giản của SGML và được sử dụng trong các tổ chức cần đến các yêu cầu xuất bản phức tạp.
+                                HTML đã trở thành một chuẩn mực của Internet do tổ chức World Wide Web Consortium (W3C) duy trì. Phiên bản chính thức mới nhất của HTML là HTML 4.01 (1999). Sau đó, các nhà phát triển đã thay thế nó bằng XHTML. Hiện nay, phiên bản mới nhất của ngôn ngữ này là HTML5.</textarea>
+                    </div>
+                    <div class="col-sm-2">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tắt</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--                                            modal edit quest                                               -->
+<div class="modal fade" id="modal-add-question" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Chi tiết câu hỏi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label for="modal-input-content-quest" class="col col-form-label">Nội dụng câu hỏi</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="modal-input-content-quest" rows="2">XML là gì ?</textarea>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <span>Câu trả lời 1</span>
+                    </div>
+                    <div class="col">
+                        <textarea class="form-control" rows="2">XML (viết tắt từ tiếng Anh: eXtensible Markup Language, tức "Ngôn ngữ đánh dấu mở rộng") là ngôn ngữ đánh dấu với mục đích chung do W3C đề nghị, để tạo ra các ngôn ngữ đánh dấu khác.
+                                Đây là một tập con đơn giản của SGML, có khả năng mô tả nhiều loại dữ liệu khác nhau. Mục đích chính của XML là đơn giản hóa việc chia sẻ dữ liệu giữa các hệ thống khác nhau, đặc biệt là các hệ thống được kết nối với Internet.
+                                Các ngôn ngữ dựa trên XML (Ví dụ: RDF, RSS, MathML, XHTML, SVG, GML và cXML) được định nghĩa theo cách thông thường, cho phép các chương trình sửa đổi và kiểm tra hợp lệ bằng các ngôn ngữ này mà không cần có hiểu biết trước về hình thức của chúng.</textarea>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="row">
+                            <span>Đáp án</span>
+                            <div class="form-check">
+                                <input class="form-check-input check-ans" id="init-mcq-ans" type="radio" name="mcq-true-answer" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <span>Câu trả lời 2</span>
+                    </div>
+                    <div class="col">
+                        <textarea class="form-control " rows="2">HTML (viết tắt của từ Hypertext Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. 
+                                Cùng với CSS và JavaScript, HTML là một trong những ngôn ngữ quan trọng trong lĩnh vực thiết kế website. HTML được định nghĩa như là một ứng dụng đơn giản của SGML và được sử dụng trong các tổ chức cần đến các yêu cầu xuất bản phức tạp.
+                                HTML đã trở thành một chuẩn mực của Internet do tổ chức World Wide Web Consortium (W3C) duy trì. Phiên bản chính thức mới nhất của HTML là HTML 4.01 (1999). Sau đó, các nhà phát triển đã thay thế nó bằng XHTML. Hiện nay, phiên bản mới nhất của ngôn ngữ này là HTML5.</textarea>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="row">
+                            <span>Đáp án</span>
+                            <div class="form-check">
+                                <input class="form-check-input check-ans" id="init-mcq-ans" type="radio" name="mcq-true-answer" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tắt</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Content/css/formAddExam.js"></script>

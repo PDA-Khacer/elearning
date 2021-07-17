@@ -1,0 +1,17 @@
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\bin\Debug\DB\db_ELearning.mdf
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\bin\Debug\DB\db_ELearning_log.ldf
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\bin\Debug\Database_model.exe.config
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\bin\Debug\Database_model.exe
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\bin\Debug\Database_model.pdb
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\obj\Debug\Database_model.csproj.CoreCompileInputs.cache
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\obj\Debug\Database_model.exe
+D:\Document\MTA\Kì 1 năm 4\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\obj\Debug\Database_model.pdb
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\bin\Debug\DB\db_ELearning.mdf
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\bin\Debug\DB\db_ELearning_log.ldf
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\bin\Debug\Database_model.exe.config
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\bin\Debug\Database_model.exe
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\bin\Debug\Database_model.pdb
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\obj\Debug\Database_model.csprojAssemblyReference.cache
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\obj\Debug\Database_model.csproj.CoreCompileInputs.cache
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\obj\Debug\Database_model.exe
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Database_model\obj\Debug\Database_model.pdb
