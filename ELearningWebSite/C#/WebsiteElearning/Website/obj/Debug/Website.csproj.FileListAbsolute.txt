@@ -104,8 +104,8 @@ D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWe
 D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Helpers.xml
 D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\System.Web.Mvc.xml
 D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.csprojAssemblyReference.cache
 D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.csproj.CoreCompileInputs.cache
 D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.csproj.CopyComplete
 D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.dll
 D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.pdb
+D:\Document\MTA\Kì 1 năm 4\0. Web học trực tuyến\Git\Ky1Nam4\ELearningWebSite\C#\WebsiteElearning\Website\obj\Debug\Website.csprojAssemblyReference.cache

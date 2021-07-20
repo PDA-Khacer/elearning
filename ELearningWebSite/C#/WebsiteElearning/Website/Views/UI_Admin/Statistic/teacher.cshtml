@@ -1,0 +1,116 @@
+﻿@using Website.Model;
+@{List<Account_Teacher> lstAccT = ViewBag.LstTeacher;}
+@{
+    ViewBag.Title = "teacher";
+    Layout = "~/Views/Shared/Layout_student.cshtml";
+}
+
+
+<h2>Thống kê giáo viên</h2>
+<div class="table-responsive">
+    <div class="row container-modal-search-student">
+        <div class="col-sm-2">
+            <label for="formGroupExampleInput">Tìm kiếm giáo viên</label>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="findStudentInSystem-tb" placeholder="Điền thông tin">
+        </div>
+        <div class="col-sm-1">
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Tên
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Mã
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1">
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Lớp
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        ...
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <button type="button" id="findStudent-btn" class="btn btn-info form-control"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" class="table-info">#</th>
+                <th scope="col" class="table-info">Mã giáo viên</th>
+                <th scope="col" class="table-info">Tên giáo viên</th>
+                <th scope="col" class="table-info">Giới tính</th>
+                <th scope="col" class="table-info">Ngày sinh</th>
+                <th scope="col" class="table-info">Số điện thoại</th>
+                <th scope="col" class="table-info">Ngày tạo tài khoản</th>
+                <th scope="col" class="table-info">
+                    Trạng thái
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (lstAccT == null)
+            {
+                <tr>
+                    <th scope="row">1</th>
+                    <td>test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+
+                </tr>
+            }
+            else
+            {
+                int i = 0;
+                foreach (Account_Teacher item in lstAccT)
+                {
+                    i++;
+                    <tr>
+                        <td><span>@i</span><span class="idAcc" hidden>@item.id</span></td>
+                        <td>@item.Username</td>
+                        <td>@item.FullName</td>
+                        <td>@item.Gender</td>
+                        <td>@item.BrithDay</td>
+                        <td>@item.PhoneNumber</td>
+                        <td>@item.DayCreate</td>
+                        @if (item.State == 1)
+                        {
+                            <td style="color:forestgreen">Họat động</td>
+                        }
+                        else
+                        {
+                            <td style="color:red">Ngừng hoạt động</td>
+                        }
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+</div>
+
+
+

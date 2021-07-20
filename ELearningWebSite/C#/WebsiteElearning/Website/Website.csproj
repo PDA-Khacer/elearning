@@ -100,6 +100,24 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Connected Services\AdminService\Website.AdminService.GetAllStudentInSystemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AdminService\Website.AdminService.GetAllTeacherInSystemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AdminService\Website.AdminService.GetStudentInSystemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AdminService\Website.AdminService.GetTeacherInSystemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AdminService\Website.AdminService.GetAllClassCourseOfCourseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AdminService\Website.AdminService.GetCourseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\TeacherServices\Teacher_Service.disco" />
     <None Include="Connected Services\TeacherServices\configuration91.svcinfo" />
     <None Include="Connected Services\TeacherServices\configuration.svcinfo" />
@@ -434,7 +452,9 @@
     </Compile>
     <Compile Include="Controllers\admin\ClassCourse\ClassCourseController.cs" />
     <Compile Include="Controllers\admin\Course\CourseController.cs" />
-    <Compile Include="Controllers\admin\HomeController.cs" />
+    <Compile Include="Controllers\admin\Statistic\StatisticController.cs" />
+    <Compile Include="Controllers\admin\Student\StudentAdminController.cs" />
+    <Compile Include="Controllers\admin\Teacher\TeacherAdminController.cs" />
     <Compile Include="Controllers\Login\LoginController.cs" />
     <Compile Include="Controllers\Login\SignUpController.cs" />
     <Compile Include="Controllers\student\HomeController.cs" />
@@ -497,6 +517,23 @@
     <Content Include="Views\UI_Teacher\ContentLec\view_Add_Exam.cshtml" />
     <Content Include="Views\PartialView\modalTeacherAddExam.cshtml" />
     <Content Include="Views\PartialView\lstQuestion.cshtml" />
+    <Content Include="Views\UI_Teacher\ContentLec\view_Add_Docs.cshtml" />
+    <Content Include="Views\UI_Admin\StudentAdmin\listStudent.cshtml" />
+    <Content Include="Views\UI_Admin\TeacherAdmin\listTeacher.cshtml" />
+    <Content Include="Views\UI_Admin\StudentAdmin\add_student.cshtml" />
+    <Content Include="Views\UI_Admin\TeacherAdmin\add_teacher.cshtml" />
+    <Content Include="Views\UI_Admin\StudentAdmin\edit_student.cshtml" />
+    <Content Include="Views\UI_Admin\TeacherAdmin\edit_teacher.cshtml" />
+    <Content Include="Views\UI_Admin\ClassCourse\add_class_course.cshtml" />
+    <Content Include="Views\UI_Admin\Course\add_course.cshtml" />
+    <Content Include="Views\UI_Admin\Course\edit_course.cshtml" />
+    <Content Include="Views\UI_Admin\ClassCourse\edit_class_course.cshtml" />
+    <Content Include="Views\UI_Admin\Statistic\student.cshtml" />
+    <Content Include="Views\UI_Admin\Statistic\teacher.cshtml" />
+    <Content Include="Views\UI_Admin\Statistic\account.cshtml" />
+    <Content Include="Views\UI_Admin\Statistic\course.cshtml" />
+    <Content Include="Views\UI_Admin\Statistic\classCourse.cshtml" />
+    <Content Include="Views\UI_Admin\Statistic\lecture.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

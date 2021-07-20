@@ -7,6 +7,12 @@
 
 <h2>Danh sách học phần có trong hệ thống</h2>
 <div class="table-responsive">
+    <div class="row" style="float:right">
+        <div class="col">
+            <button type="button" style="margin: 5px;" class="btn btn-outline-success" onclick="location.href='@Url.Action("ViewAdd", "Course")'">Thêm mới</button>
+        </div>
+    </div>
+
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -14,7 +20,7 @@
                 <th scope="col" class="table-info">Mã học phần</th>
                 <th scope="col" class="table-info">Tên học phần</th>
                 <th scope="col" class="table-info">Số lớp học phần</th>
-                <th scope="col" class="table-info" >
+                <th scope="col" class="table-info">
                 </th>
             </tr>
         </thead>
@@ -36,18 +42,20 @@
             }
             else
             {
+                int i = 0;
                 foreach (Course item in lstCourse)
                 {
+                    i++;
                     <tr>
-                        <th scope="row">#</th>
+                        <th scope="row">@i</th>
                         <td>@item.CodeCourse</td>
                         <td>@item.NameCourse</td>
                         <td>
-                            @item.LstClass.classCourses.Count lớp. 
-                            <button type="button" class="btn btn-outline-dark">Chi tiết</button>
+                            @item.LstClass.classCourses.Count lớp.
+                            <button type="button" class="btn btn-outline-dark" onclick="location.href='@Url.Action("ShowListClassCourse", "Course", new { id = item.id })'">Chi tiết</button>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-outline-warning">Sửa</button>
+                            <button type="button" class="btn btn-outline-warning" onclick="location.href='@Url.Action("ViewEdit", "Course", new { id = item.id })'">Sửa</button>
                             <button type="button" class="btn btn-outline-danger">Xóa</button>
                         </td>
                     </tr>
@@ -56,4 +64,4 @@
 
         </tbody>
     </table>
- </div>
+</div>

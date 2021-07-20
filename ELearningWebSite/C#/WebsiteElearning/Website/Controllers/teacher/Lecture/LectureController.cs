@@ -23,5 +23,10 @@ namespace Website.Controllers.teacher.Lecture
         {
             return View("~/Views/UI_Teacher/ContentLec/view_Add_Exam.cshtml");
         }
+
+        public ActionResult ViewAddDoc()
+        {
+            return View("~/Views/UI_Teacher/ContentLec/view_Add_Docs.cshtml");
+        }
     }
 }

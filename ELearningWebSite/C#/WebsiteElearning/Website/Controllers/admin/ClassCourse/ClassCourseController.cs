@@ -25,11 +25,30 @@ namespace Website.Controllers.admin.ClassCourse
         public ActionResult DetailClassCourse(int id)
         {
             Model.ClassCourse cC = JsonConvert.DeserializeObject<Model.ClassCourse>(ws.GetClassCourse(id));
-            ViewBag.listClassCoures = cC;
+            ViewBag.classCoures = cC;
             Session["classCourse"] = cC;
             return View("~/Views/UI_Admin/ClassCourse/view_detail_class_course.cshtml");
         }
 
+        public ActionResult ViewAddClassCourse1()
+        {
+            ViewBag.lstCourse = JsonConvert.DeserializeObject<ListCourse>(ws.GetAllCourse()).courses;
+            return View("~/Views/UI_Admin/ClassCourse/add_class_course.cshtml");
+        }
+
+        public ActionResult ViewAddClassCourse2(int id)
+        {
+            ViewBag.Couse = JsonConvert.DeserializeObject<Model.Course>(ws.GetCourse(id));
+            ViewBag.lstCourse = JsonConvert.DeserializeObject<ListCourse>(ws.GetAllCourse()).courses;
+            return View("~/Views/UI_Admin/ClassCourse/add_class_course.cshtml");
+        }
+
+        public ActionResult ViewEditClassCourse(int id)
+        {
+            Model.ClassCourse cC = JsonConvert.DeserializeObject<Model.ClassCourse>(ws.GetClassCourse(id));
+            ViewBag.Couse = JsonConvert.DeserializeObject<Model.Course>(ws.GetCourse(cC.idCourse));
+            return View("~/Views/UI_Admin/ClassCourse/view_detail_class_course.cshtml");
+        }
 
         public PartialViewResult Modal()
         {

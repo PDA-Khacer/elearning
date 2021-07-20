@@ -1,0 +1,179 @@
+﻿@using Website.Model;
+@{Account_Student Acc = ViewBag.student;}
+@{
+    ViewBag.Title = "edit_student";
+    Layout = "~/Views/Shared/Layout_student.cshtml";
+}
+
+@if (Acc == null)
+{
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Chung
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Tên sinh viên :</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Điền tên giáo viên">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Mã sinh viên :</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Điền mã giáo viên">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Ngày sinh</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <input class="form-control" type="datetime-local" value="1999-08-19T13:45:00" id="example-datetime-local-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Giới tính :</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <select class="form-control" aria-label="Default select example">
+                                    <option selected value="0">Nữ</option>
+                                    <option value="1">Nam</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Số điện thoại :</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Điền số điện thoại">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Số email :</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Điền email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Chung
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Tên sinh viên :</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Điền tên giáo viên" value="@Acc.FullName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Mã sinh viên :</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Điền mã giáo viên"  value="@Acc.Username">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Ngày sinh</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <input class="form-control" type="datetime-local" value="@Acc.BrithDay" id="example-datetime-local-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Giới tính :</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <select class="form-control" aria-label="Default select example">
+                                    <option selected value="0">Nữ</option>
+                                    <option value="1">Nam</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Số điện thoại :</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Điền số điện thoại"  value="@Acc.PhoneNumber">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Số email :</span>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Điền email"  value="@Acc.Email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+<div class="row">
+    <div class="col-sm-5">
+    </div>
+    <div class="col">
+        <button type="button" style="margin: 5px;" class="btn btn-outline-success" onclick="location.href='@Url.Action("ViewAddExam", "Lecture")'">Lưu</button>
+    </div>
+</div>
+

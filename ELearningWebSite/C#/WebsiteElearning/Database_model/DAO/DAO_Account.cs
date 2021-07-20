@@ -106,12 +106,12 @@ namespace Database_model.DAO
                 db_Uitl.Connect();
                 if (db_Uitl.isLive())
                 {
-                    string sqlQuery = "Select * from Account where role ='Student'";
+                    string sqlQuery = "Select * from  Account where role='Student'";
                     SqlCommand cm = new SqlCommand(sqlQuery, db_Uitl.Conn);
                     SqlDataReader reader = cm.ExecuteReader();
-                    Account_Student token = new Account_Student();
                     while (reader.Read())
                     {
+                        Account_Student token = new Account_Student();
                         token.id = reader.GetInt32(0);
                         token.DayCreate = reader.GetDateTime(1);
                         token.Username = reader.GetString(2);
@@ -124,7 +124,9 @@ namespace Database_model.DAO
                         token.PhoneNumber = reader.GetString(9);
                         token.Role = reader.GetString(10);
                         token.State = reader.GetInt16(11);
-                        reader.Close();
+                        DAO_Announcement daoAnn = new DAO_Announcement();
+                        token.LstAnnoum = daoAnn.GetAll(token.Username);
+                        ls.Add(token);
                     }
                     reader.Close();
                     db_Uitl.Close();
@@ -151,9 +153,9 @@ namespace Database_model.DAO
                     string sqlQuery = "Select * from Account where role ='Teacher'";
                     SqlCommand cm = new SqlCommand(sqlQuery, db_Uitl.Conn);
                     SqlDataReader reader = cm.ExecuteReader();
-                    Account_Teacher token = new Account_Teacher();
                     while (reader.Read())
                     {
+                        Account_Teacher token = new Account_Teacher();
                         token.id = reader.GetInt32(0);
                         token.DayCreate = reader.GetDateTime(1);
                         token.Username = reader.GetString(2);
@@ -166,11 +168,11 @@ namespace Database_model.DAO
                         token.PhoneNumber = reader.GetString(9);
                         token.Role = reader.GetString(10);
                         token.State = reader.GetInt16(11);
-                        reader.Close();
                         DAO_Announcement dao_ann = new DAO_Announcement();
                         DAO_ContentLec dao_ctl = new DAO_ContentLec();
                         token.LstAnnoum = dao_ann.GetAll(token.Username);
                         token.LstLecSelf = dao_ctl.GetAll(token.Username, 2);
+                        ls.Add(token);
                     }
                     reader.Close();
                     db_Uitl.Close();
@@ -301,6 +303,7 @@ namespace Database_model.DAO
             Account_Student token = new Account_Student();
             try
             {
+                db_Uitl.Connect();
                 if (db_Uitl.isLive())
                 {
                     string sqlQuery = "Select * from Account where id = " + id + " and role ='Student'";
@@ -320,6 +323,7 @@ namespace Database_model.DAO
                     token.Role = reader.GetString(10);
                     token.State = reader.GetInt16(11);
                     reader.Close();
+                    db_Uitl.Close();
                 }
             }
             catch (SqlException e)
@@ -395,6 +399,7 @@ namespace Database_model.DAO
                     DAO_ContentLec dao_ctl = new DAO_ContentLec();
                     token.LstAnnoum = dao_ann.GetAll(token.Username);
                     token.LstLecSelf = dao_ctl.GetAll(token.Username, 2);
+                    reader.Close();
                     db_Uitl.Close();
                 }
             }

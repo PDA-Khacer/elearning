@@ -3,17 +3,37 @@
     ViewBag.Title = "view_list_class_coures";
     Layout = "~/Views/Shared/Layout_student.cshtml";
     List<ClassCourse> lstCC = ViewBag.listClassCoures.classCourses;
+    Course course = ViewBag.Couse;
 }
 
-<h2>Danh sách các lớp học phần có trong hế thống</h2>
+@if (course != null)
+{
+    <h2>Danh sách các lớp học phần của: @course.NameCourse</h2>
+    <div class="row" style="float:right">
+        <div class="col">
+            <button type="button" style="margin: 5px;" class="btn btn-outline-success" onclick="location.href='@Url.Action("ViewAddClassCourse2", "ClassCourse", new { id = course.id })'">Thêm mới</button>
+        </div>
+    </div>
+}
+else
+{
+    <h2>Danh sách các lớp học phần có trong hế thống</h2>
+    <div class="row" style="float:right">
+        <div class="col">
+            <button type="button" style="margin: 5px;" class="btn btn-outline-success" onclick="location.href='@Url.Action("ViewAddClassCourse1", "ClassCourse")'">Thêm mới</button>
+        </div>
+    </div>
+}
+
+
 
 <div class="table-responsive">
     <table class="table table-bordered">
         <thead>
             <tr>
                 <th scope="col" class="table-info">#</th>
-                <th scope="col" class="table-info">Mã học phần</th>
-                <th scope="col" class="table-info">Tên học phần</th>
+                <th scope="col" class="table-info">Mã lớp học phần</th>
+                <th scope="col" class="table-info">Tên lớp học phần</th>
                 <th scope="col" class="table-info">Tài nguyên</th>
                 <th scope="col" class="table-info">
                 </th>
@@ -37,17 +57,19 @@
             }
             else
             {
+                int i = 0;
                 foreach (ClassCourse item in lstCC)
                 {
+                    i++;
                     <tr>
-                        <th scope="row">#</th>
+                        <th scope="row">@i</th>
                         <td>@item.CodeClass</td>
                         <td>@item.NameClass</td>
                         <td>
-                            <button type="button" class="btn btn-outline-dark">Chi tiết</button>
+                            <button type="button" class="btn btn-outline-dark" onclick="location.href='@Url.Action("DetailClassCourse", "ClassCourse", new { id = item.id })'">Chi tiết</button>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-outline-warning">Sửa</button>
+                            <button type="button" class="btn btn-outline-warning"  onclick="location.href='@Url.Action("ViewEditClassCourse", "ClassCourse", new { id = item.id })'">Sửa</button>
                             <button type="button" class="btn btn-outline-danger">Xóa</button>
                         </td>
                     </tr>

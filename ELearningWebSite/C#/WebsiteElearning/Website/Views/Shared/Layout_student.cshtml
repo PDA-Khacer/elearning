@@ -52,19 +52,51 @@
                 <li>
                     <a href="#">Lịch học</a>
 
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Học phần của tôi</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Thống kê</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">Học phần 1</a>
+                            <a href='@Url.Action("StatisticStudent", "Statistic")'>Thống kê sinh viên</a>
                         </li>
                         <li>
-                            <a href="#">Học phần 2</a>
+                            <a href='@Url.Action("StatisticTeacher", "Statistic")'>Thống kê giáo viên</a>
                         </li>
                         <li>
-                            <a href="#">Học phần 3</a>
+                            <a href='@Url.Action("StatisticAccount", "Statistic")'>Thống kê tài khoản</a>
+                        </li>
+                        <li>
+                            <a href='@Url.Action("StatisticCourse", "Statistic")'>Thống kế học phần</a>
+                        </li>
+                        <li>
+                            <a href='@Url.Action("StatisticClassCourse", "Statistic")'>Thóng kế lớp học phần</a>
+                        </li>
+                        <li>
+                            <a href='@Url.Action("StatisticLecture", "Statistic")'>Thống kê bài học</a>
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Quản lý con người</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu1">
+                        <li>
+                            <a href='@Url.Action("Index", "StudentAdmin")'>Quản lý sinh viên</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "TeacherAdmin")">Quản lý giáo viên</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Quản lý học tập</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+                        <li>
+                            <a href='@Url.Action("Index", "Course")'>Quản lý học phần</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "ClassCourse")">Quản lý lớp học phần</a>
+                        </li>
+                    </ul>
+                </li>
+
                 <li>
                     <a href="#">Liên hệ</a>
                 </li>

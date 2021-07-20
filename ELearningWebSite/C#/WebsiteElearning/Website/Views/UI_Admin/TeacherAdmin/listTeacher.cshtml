@@ -1,0 +1,75 @@
+﻿@using Website.Model;
+@{List<Account_Teacher> lstAccT = ViewBag.LstTeacher;}
+@{
+    ViewBag.Title = "listTeacher";
+    Layout = "~/Views/Shared/Layout_student.cshtml";
+}
+
+<h2>Danh sách giáo viên có trong hệ thống</h2>
+<div class="table-responsive">
+    <div class="row" style="float:right">
+        <div class="col">
+            <button type="button" style="margin: 5px;" class="btn btn-outline-success" onclick="location.href='@Url.Action("ViewAdd", "TeacherAdmin")'">Thêm mới</button>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" class="table-info">#</th>
+                <th scope="col" class="table-info">Mã giáo viên</th>
+                <th scope="col" class="table-info">Tên giáo viên</th>
+                <th scope="col" class="table-info">Giới tính</th>
+                <th scope="col" class="table-info">Ngày sinh</th>
+                <th scope="col" class="table-info">Số điện thoại</th>
+                <th scope="col" class="table-info">Ngày tạo tài khoản</th>
+                <th scope="col" class="table-info">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (lstAccT == null)
+            {
+                <tr>
+                    <th scope="row">1</th>
+                    <td>test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Sửa</button>
+                        <button type="button" class="btn btn-outline-danger">Xóa</button>
+                    </td>
+                </tr>
+            }
+            else
+            {
+                int i = 0;
+                foreach (Account_Teacher item in lstAccT)
+                {
+                    i++;
+                    <tr>
+                        <td><span>@i</span><span class="idAcc" hidden>@item.id</span></td>
+                        <td>@item.Username</td>
+                        <td>@item.FullName</td>
+                        <td>@item.Gender</td>
+                        <td>@item.BrithDay</td>
+                        <td>@item.PhoneNumber</td>
+                        <td>@item.DayCreate</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-warning" onclick="location.href='@Url.Action("ViewEdit", "TeacherAdmin", new { id = item.id })'">Sửa</button>
+                            <button type="button" class="btn btn-outline-danger">Xóa</button>
+                        </td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+</div>
+
+
+

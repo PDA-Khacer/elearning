@@ -37,9 +37,23 @@ namespace ServicesProject.ServicesWebASMX
 
         [WebMethod]
         [ScriptMethod(UseHttpGet = true, ResponseFormat = ResponseFormat.Json)]
+        public string GetCourse(int id)
+        {
+            return JsonConvert.SerializeObject(Bus_Course.getCourseFull(id));
+        }
+
+        [WebMethod]
+        [ScriptMethod(UseHttpGet = true, ResponseFormat = ResponseFormat.Json)]
         public string GetAllClassCourse()
         {
             return JsonConvert.SerializeObject(new ListClassCourse(BUS_ClassCourse.GetAllClassCourse()));
+        }
+
+        [WebMethod]
+        [ScriptMethod(UseHttpGet = true, ResponseFormat = ResponseFormat.Json)]
+        public string GetAllClassCourseOfCourse(int id)
+        {
+            return JsonConvert.SerializeObject(new ListClassCourse(BUS_ClassCourse.GetAllClassOfCourse(id)));
         }
 
         [WebMethod]
@@ -54,6 +68,34 @@ namespace ServicesProject.ServicesWebASMX
         public string GetAcountInClass(int idClass)
         {
             return JsonConvert.SerializeObject(BUS_ClassCourse.GetAllAccountInClass(idClass));
+        }
+
+        [WebMethod]
+        [ScriptMethod(UseHttpGet = true, ResponseFormat = ResponseFormat.Json)]
+        public string GetStudentInSystem(int id)
+        {
+            return JsonConvert.SerializeObject(BUS_Account.GetStudent(id));
+        }
+
+        [WebMethod]
+        [ScriptMethod(UseHttpGet = true, ResponseFormat = ResponseFormat.Json)]
+        public string GetTeacherInSystem(int id)
+        {
+            return JsonConvert.SerializeObject(BUS_Account.GetTeacher(id));
+        }
+
+        [WebMethod]
+        [ScriptMethod(UseHttpGet = true, ResponseFormat = ResponseFormat.Json)]
+        public string GetAllStudentInSystem()
+        {
+            return JsonConvert.SerializeObject(new ListAccountStudent(BUS_Account.GetAllStudent()));
+        }
+
+        [WebMethod]
+        [ScriptMethod(UseHttpGet = true, ResponseFormat = ResponseFormat.Json)]
+        public string GetAllTeacherInSystem()
+        {
+            return JsonConvert.SerializeObject(new ListAccountTeacher(BUS_Account.GetAllTeacher()));
         }
 
         [WebMethod]

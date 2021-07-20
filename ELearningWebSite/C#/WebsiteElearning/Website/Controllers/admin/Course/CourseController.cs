@@ -19,5 +19,24 @@ namespace Website.Controllers.admin.Course
             ViewBag.listCourse = lstCourse;
             return View("~/Views/UI_Admin/Course/view_list_course.cshtml");
         }
+
+        public ActionResult ShowListClassCourse(int id)
+        {
+            ListClassCourse lstCC = JsonConvert.DeserializeObject<ListClassCourse>(ws.GetAllClassCourseOfCourse(id));
+            ViewBag.listClassCoures = lstCC;
+            ViewBag.Couse = JsonConvert.DeserializeObject<Model.Course>(ws.GetCourse(id));
+            return View("~/Views/UI_Admin/ClassCourse/view_list_class_coures.cshtml");
+        }
+
+        public ActionResult ViewAdd()
+        {
+            return View("~/Views/UI_Admin/Course/add_course.cshtml");
+        }
+
+        public ActionResult ViewEdit(int id)
+        {
+            ViewBag.Couse = JsonConvert.DeserializeObject<Model.Course>(ws.GetCourse(id));
+            return View("~/Views/UI_Admin/Course/edit_course.cshtml");
+        }
     }
 }

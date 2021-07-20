@@ -93,7 +93,7 @@ namespace Database_model.DAO
                     reader.Read();
                     token.CodeCourse = reader.GetString(1);
                     token.NameCourse = reader.GetString(2);
-                    token.State = reader.GetInt16(3);
+                    token.State = reader.GetInt32(3);
                     DAO_ClassCourse dao_class = new DAO_ClassCourse();
                     token.LstClass = new ListClassCourse(dao_class.GetAll(token.id));
                     reader.Close();
@@ -120,9 +120,10 @@ namespace Database_model.DAO
                     SqlCommand cm = new SqlCommand(sqlQuery, db_Uitl.Conn);
                     SqlDataReader reader = cm.ExecuteReader();
                     reader.Read();
+                    token.id = reader.GetInt32(0);
                     token.CodeCourse = reader.GetString(1);
                     token.NameCourse = reader.GetString(2);
-                    token.State = reader.GetInt16(3);
+                    token.State = reader.GetInt32(3);
                     DAO_ClassCourse dao_class = new DAO_ClassCourse();
                     token.LstClass = new ListClassCourse(dao_class.GetAll(token.id));
                     reader.Close();

@@ -29,12 +29,26 @@ namespace Website.AdminService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllCourse", ReplyAction="*")]
         System.Threading.Tasks.Task<Website.AdminService.GetAllCourseResponse> GetAllCourseAsync(Website.AdminService.GetAllCourseRequest request);
         
+        // CODEGEN: Generating message contract since element name GetCourseResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCourse", ReplyAction="*")]
+        Website.AdminService.GetCourseResponse GetCourse(Website.AdminService.GetCourseRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCourse", ReplyAction="*")]
+        System.Threading.Tasks.Task<Website.AdminService.GetCourseResponse> GetCourseAsync(Website.AdminService.GetCourseRequest request);
+        
         // CODEGEN: Generating message contract since element name GetAllClassCourseResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllClassCourse", ReplyAction="*")]
         Website.AdminService.GetAllClassCourseResponse GetAllClassCourse(Website.AdminService.GetAllClassCourseRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllClassCourse", ReplyAction="*")]
         System.Threading.Tasks.Task<Website.AdminService.GetAllClassCourseResponse> GetAllClassCourseAsync(Website.AdminService.GetAllClassCourseRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetAllClassCourseOfCourseResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllClassCourseOfCourse", ReplyAction="*")]
+        Website.AdminService.GetAllClassCourseOfCourseResponse GetAllClassCourseOfCourse(Website.AdminService.GetAllClassCourseOfCourseRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllClassCourseOfCourse", ReplyAction="*")]
+        System.Threading.Tasks.Task<Website.AdminService.GetAllClassCourseOfCourseResponse> GetAllClassCourseOfCourseAsync(Website.AdminService.GetAllClassCourseOfCourseRequest request);
         
         // CODEGEN: Generating message contract since element name GetClassCourseResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetClassCourse", ReplyAction="*")]
@@ -49,6 +63,34 @@ namespace Website.AdminService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAcountInClass", ReplyAction="*")]
         System.Threading.Tasks.Task<Website.AdminService.GetAcountInClassResponse> GetAcountInClassAsync(Website.AdminService.GetAcountInClassRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetStudentInSystemResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetStudentInSystem", ReplyAction="*")]
+        Website.AdminService.GetStudentInSystemResponse GetStudentInSystem(Website.AdminService.GetStudentInSystemRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetStudentInSystem", ReplyAction="*")]
+        System.Threading.Tasks.Task<Website.AdminService.GetStudentInSystemResponse> GetStudentInSystemAsync(Website.AdminService.GetStudentInSystemRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetTeacherInSystemResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTeacherInSystem", ReplyAction="*")]
+        Website.AdminService.GetTeacherInSystemResponse GetTeacherInSystem(Website.AdminService.GetTeacherInSystemRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTeacherInSystem", ReplyAction="*")]
+        System.Threading.Tasks.Task<Website.AdminService.GetTeacherInSystemResponse> GetTeacherInSystemAsync(Website.AdminService.GetTeacherInSystemRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetAllStudentInSystemResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllStudentInSystem", ReplyAction="*")]
+        Website.AdminService.GetAllStudentInSystemResponse GetAllStudentInSystem(Website.AdminService.GetAllStudentInSystemRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllStudentInSystem", ReplyAction="*")]
+        System.Threading.Tasks.Task<Website.AdminService.GetAllStudentInSystemResponse> GetAllStudentInSystemAsync(Website.AdminService.GetAllStudentInSystemRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetAllTeacherInSystemResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllTeacherInSystem", ReplyAction="*")]
+        Website.AdminService.GetAllTeacherInSystemResponse GetAllTeacherInSystem(Website.AdminService.GetAllTeacherInSystemRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllTeacherInSystem", ReplyAction="*")]
+        System.Threading.Tasks.Task<Website.AdminService.GetAllTeacherInSystemResponse> GetAllTeacherInSystemAsync(Website.AdminService.GetAllTeacherInSystemRequest request);
         
         // CODEGEN: Generating message contract since element name GetAllStudentResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllStudent", ReplyAction="*")]
@@ -255,6 +297,74 @@ namespace Website.AdminService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetCourseRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCourse", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetCourseRequestBody Body;
+        
+        public GetCourseRequest() {
+        }
+        
+        public GetCourseRequest(Website.AdminService.GetCourseRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetCourseRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        public GetCourseRequestBody() {
+        }
+        
+        public GetCourseRequestBody(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetCourseResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCourseResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetCourseResponseBody Body;
+        
+        public GetCourseResponse() {
+        }
+        
+        public GetCourseResponse(Website.AdminService.GetCourseResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetCourseResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetCourseResult;
+        
+        public GetCourseResponseBody() {
+        }
+        
+        public GetCourseResponseBody(string GetCourseResult) {
+            this.GetCourseResult = GetCourseResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetAllClassCourseRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllClassCourse", Namespace="http://tempuri.org/", Order=0)]
@@ -309,6 +419,74 @@ namespace Website.AdminService {
         
         public GetAllClassCourseResponseBody(string GetAllClassCourseResult) {
             this.GetAllClassCourseResult = GetAllClassCourseResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllClassCourseOfCourseRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllClassCourseOfCourse", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetAllClassCourseOfCourseRequestBody Body;
+        
+        public GetAllClassCourseOfCourseRequest() {
+        }
+        
+        public GetAllClassCourseOfCourseRequest(Website.AdminService.GetAllClassCourseOfCourseRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllClassCourseOfCourseRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        public GetAllClassCourseOfCourseRequestBody() {
+        }
+        
+        public GetAllClassCourseOfCourseRequestBody(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllClassCourseOfCourseResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllClassCourseOfCourseResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetAllClassCourseOfCourseResponseBody Body;
+        
+        public GetAllClassCourseOfCourseResponse() {
+        }
+        
+        public GetAllClassCourseOfCourseResponse(Website.AdminService.GetAllClassCourseOfCourseResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllClassCourseOfCourseResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetAllClassCourseOfCourseResult;
+        
+        public GetAllClassCourseOfCourseResponseBody() {
+        }
+        
+        public GetAllClassCourseOfCourseResponseBody(string GetAllClassCourseOfCourseResult) {
+            this.GetAllClassCourseOfCourseResult = GetAllClassCourseOfCourseResult;
         }
     }
     
@@ -445,6 +623,264 @@ namespace Website.AdminService {
         
         public GetAcountInClassResponseBody(string GetAcountInClassResult) {
             this.GetAcountInClassResult = GetAcountInClassResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetStudentInSystemRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetStudentInSystem", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetStudentInSystemRequestBody Body;
+        
+        public GetStudentInSystemRequest() {
+        }
+        
+        public GetStudentInSystemRequest(Website.AdminService.GetStudentInSystemRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetStudentInSystemRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        public GetStudentInSystemRequestBody() {
+        }
+        
+        public GetStudentInSystemRequestBody(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetStudentInSystemResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetStudentInSystemResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetStudentInSystemResponseBody Body;
+        
+        public GetStudentInSystemResponse() {
+        }
+        
+        public GetStudentInSystemResponse(Website.AdminService.GetStudentInSystemResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetStudentInSystemResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetStudentInSystemResult;
+        
+        public GetStudentInSystemResponseBody() {
+        }
+        
+        public GetStudentInSystemResponseBody(string GetStudentInSystemResult) {
+            this.GetStudentInSystemResult = GetStudentInSystemResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTeacherInSystemRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTeacherInSystem", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetTeacherInSystemRequestBody Body;
+        
+        public GetTeacherInSystemRequest() {
+        }
+        
+        public GetTeacherInSystemRequest(Website.AdminService.GetTeacherInSystemRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTeacherInSystemRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        public GetTeacherInSystemRequestBody() {
+        }
+        
+        public GetTeacherInSystemRequestBody(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTeacherInSystemResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTeacherInSystemResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetTeacherInSystemResponseBody Body;
+        
+        public GetTeacherInSystemResponse() {
+        }
+        
+        public GetTeacherInSystemResponse(Website.AdminService.GetTeacherInSystemResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTeacherInSystemResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetTeacherInSystemResult;
+        
+        public GetTeacherInSystemResponseBody() {
+        }
+        
+        public GetTeacherInSystemResponseBody(string GetTeacherInSystemResult) {
+            this.GetTeacherInSystemResult = GetTeacherInSystemResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllStudentInSystemRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllStudentInSystem", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetAllStudentInSystemRequestBody Body;
+        
+        public GetAllStudentInSystemRequest() {
+        }
+        
+        public GetAllStudentInSystemRequest(Website.AdminService.GetAllStudentInSystemRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class GetAllStudentInSystemRequestBody {
+        
+        public GetAllStudentInSystemRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllStudentInSystemResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllStudentInSystemResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetAllStudentInSystemResponseBody Body;
+        
+        public GetAllStudentInSystemResponse() {
+        }
+        
+        public GetAllStudentInSystemResponse(Website.AdminService.GetAllStudentInSystemResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllStudentInSystemResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetAllStudentInSystemResult;
+        
+        public GetAllStudentInSystemResponseBody() {
+        }
+        
+        public GetAllStudentInSystemResponseBody(string GetAllStudentInSystemResult) {
+            this.GetAllStudentInSystemResult = GetAllStudentInSystemResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllTeacherInSystemRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllTeacherInSystem", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetAllTeacherInSystemRequestBody Body;
+        
+        public GetAllTeacherInSystemRequest() {
+        }
+        
+        public GetAllTeacherInSystemRequest(Website.AdminService.GetAllTeacherInSystemRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class GetAllTeacherInSystemRequestBody {
+        
+        public GetAllTeacherInSystemRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllTeacherInSystemResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllTeacherInSystemResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Website.AdminService.GetAllTeacherInSystemResponseBody Body;
+        
+        public GetAllTeacherInSystemResponse() {
+        }
+        
+        public GetAllTeacherInSystemResponse(Website.AdminService.GetAllTeacherInSystemResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllTeacherInSystemResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetAllTeacherInSystemResult;
+        
+        public GetAllTeacherInSystemResponseBody() {
+        }
+        
+        public GetAllTeacherInSystemResponseBody(string GetAllTeacherInSystemResult) {
+            this.GetAllTeacherInSystemResult = GetAllTeacherInSystemResult;
         }
     }
     
@@ -938,6 +1374,31 @@ namespace Website.AdminService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Website.AdminService.GetCourseResponse Website.AdminService.Admin_ServiceSoap.GetCourse(Website.AdminService.GetCourseRequest request) {
+            return base.Channel.GetCourse(request);
+        }
+        
+        public string GetCourse(int id) {
+            Website.AdminService.GetCourseRequest inValue = new Website.AdminService.GetCourseRequest();
+            inValue.Body = new Website.AdminService.GetCourseRequestBody();
+            inValue.Body.id = id;
+            Website.AdminService.GetCourseResponse retVal = ((Website.AdminService.Admin_ServiceSoap)(this)).GetCourse(inValue);
+            return retVal.Body.GetCourseResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Website.AdminService.GetCourseResponse> Website.AdminService.Admin_ServiceSoap.GetCourseAsync(Website.AdminService.GetCourseRequest request) {
+            return base.Channel.GetCourseAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Website.AdminService.GetCourseResponse> GetCourseAsync(int id) {
+            Website.AdminService.GetCourseRequest inValue = new Website.AdminService.GetCourseRequest();
+            inValue.Body = new Website.AdminService.GetCourseRequestBody();
+            inValue.Body.id = id;
+            return ((Website.AdminService.Admin_ServiceSoap)(this)).GetCourseAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Website.AdminService.GetAllClassCourseResponse Website.AdminService.Admin_ServiceSoap.GetAllClassCourse(Website.AdminService.GetAllClassCourseRequest request) {
             return base.Channel.GetAllClassCourse(request);
         }
@@ -958,6 +1419,31 @@ namespace Website.AdminService {
             Website.AdminService.GetAllClassCourseRequest inValue = new Website.AdminService.GetAllClassCourseRequest();
             inValue.Body = new Website.AdminService.GetAllClassCourseRequestBody();
             return ((Website.AdminService.Admin_ServiceSoap)(this)).GetAllClassCourseAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Website.AdminService.GetAllClassCourseOfCourseResponse Website.AdminService.Admin_ServiceSoap.GetAllClassCourseOfCourse(Website.AdminService.GetAllClassCourseOfCourseRequest request) {
+            return base.Channel.GetAllClassCourseOfCourse(request);
+        }
+        
+        public string GetAllClassCourseOfCourse(int id) {
+            Website.AdminService.GetAllClassCourseOfCourseRequest inValue = new Website.AdminService.GetAllClassCourseOfCourseRequest();
+            inValue.Body = new Website.AdminService.GetAllClassCourseOfCourseRequestBody();
+            inValue.Body.id = id;
+            Website.AdminService.GetAllClassCourseOfCourseResponse retVal = ((Website.AdminService.Admin_ServiceSoap)(this)).GetAllClassCourseOfCourse(inValue);
+            return retVal.Body.GetAllClassCourseOfCourseResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Website.AdminService.GetAllClassCourseOfCourseResponse> Website.AdminService.Admin_ServiceSoap.GetAllClassCourseOfCourseAsync(Website.AdminService.GetAllClassCourseOfCourseRequest request) {
+            return base.Channel.GetAllClassCourseOfCourseAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Website.AdminService.GetAllClassCourseOfCourseResponse> GetAllClassCourseOfCourseAsync(int id) {
+            Website.AdminService.GetAllClassCourseOfCourseRequest inValue = new Website.AdminService.GetAllClassCourseOfCourseRequest();
+            inValue.Body = new Website.AdminService.GetAllClassCourseOfCourseRequestBody();
+            inValue.Body.id = id;
+            return ((Website.AdminService.Admin_ServiceSoap)(this)).GetAllClassCourseOfCourseAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1008,6 +1494,102 @@ namespace Website.AdminService {
             inValue.Body = new Website.AdminService.GetAcountInClassRequestBody();
             inValue.Body.idClass = idClass;
             return ((Website.AdminService.Admin_ServiceSoap)(this)).GetAcountInClassAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Website.AdminService.GetStudentInSystemResponse Website.AdminService.Admin_ServiceSoap.GetStudentInSystem(Website.AdminService.GetStudentInSystemRequest request) {
+            return base.Channel.GetStudentInSystem(request);
+        }
+        
+        public string GetStudentInSystem(int id) {
+            Website.AdminService.GetStudentInSystemRequest inValue = new Website.AdminService.GetStudentInSystemRequest();
+            inValue.Body = new Website.AdminService.GetStudentInSystemRequestBody();
+            inValue.Body.id = id;
+            Website.AdminService.GetStudentInSystemResponse retVal = ((Website.AdminService.Admin_ServiceSoap)(this)).GetStudentInSystem(inValue);
+            return retVal.Body.GetStudentInSystemResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Website.AdminService.GetStudentInSystemResponse> Website.AdminService.Admin_ServiceSoap.GetStudentInSystemAsync(Website.AdminService.GetStudentInSystemRequest request) {
+            return base.Channel.GetStudentInSystemAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Website.AdminService.GetStudentInSystemResponse> GetStudentInSystemAsync(int id) {
+            Website.AdminService.GetStudentInSystemRequest inValue = new Website.AdminService.GetStudentInSystemRequest();
+            inValue.Body = new Website.AdminService.GetStudentInSystemRequestBody();
+            inValue.Body.id = id;
+            return ((Website.AdminService.Admin_ServiceSoap)(this)).GetStudentInSystemAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Website.AdminService.GetTeacherInSystemResponse Website.AdminService.Admin_ServiceSoap.GetTeacherInSystem(Website.AdminService.GetTeacherInSystemRequest request) {
+            return base.Channel.GetTeacherInSystem(request);
+        }
+        
+        public string GetTeacherInSystem(int id) {
+            Website.AdminService.GetTeacherInSystemRequest inValue = new Website.AdminService.GetTeacherInSystemRequest();
+            inValue.Body = new Website.AdminService.GetTeacherInSystemRequestBody();
+            inValue.Body.id = id;
+            Website.AdminService.GetTeacherInSystemResponse retVal = ((Website.AdminService.Admin_ServiceSoap)(this)).GetTeacherInSystem(inValue);
+            return retVal.Body.GetTeacherInSystemResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Website.AdminService.GetTeacherInSystemResponse> Website.AdminService.Admin_ServiceSoap.GetTeacherInSystemAsync(Website.AdminService.GetTeacherInSystemRequest request) {
+            return base.Channel.GetTeacherInSystemAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Website.AdminService.GetTeacherInSystemResponse> GetTeacherInSystemAsync(int id) {
+            Website.AdminService.GetTeacherInSystemRequest inValue = new Website.AdminService.GetTeacherInSystemRequest();
+            inValue.Body = new Website.AdminService.GetTeacherInSystemRequestBody();
+            inValue.Body.id = id;
+            return ((Website.AdminService.Admin_ServiceSoap)(this)).GetTeacherInSystemAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Website.AdminService.GetAllStudentInSystemResponse Website.AdminService.Admin_ServiceSoap.GetAllStudentInSystem(Website.AdminService.GetAllStudentInSystemRequest request) {
+            return base.Channel.GetAllStudentInSystem(request);
+        }
+        
+        public string GetAllStudentInSystem() {
+            Website.AdminService.GetAllStudentInSystemRequest inValue = new Website.AdminService.GetAllStudentInSystemRequest();
+            inValue.Body = new Website.AdminService.GetAllStudentInSystemRequestBody();
+            Website.AdminService.GetAllStudentInSystemResponse retVal = ((Website.AdminService.Admin_ServiceSoap)(this)).GetAllStudentInSystem(inValue);
+            return retVal.Body.GetAllStudentInSystemResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Website.AdminService.GetAllStudentInSystemResponse> Website.AdminService.Admin_ServiceSoap.GetAllStudentInSystemAsync(Website.AdminService.GetAllStudentInSystemRequest request) {
+            return base.Channel.GetAllStudentInSystemAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Website.AdminService.GetAllStudentInSystemResponse> GetAllStudentInSystemAsync() {
+            Website.AdminService.GetAllStudentInSystemRequest inValue = new Website.AdminService.GetAllStudentInSystemRequest();
+            inValue.Body = new Website.AdminService.GetAllStudentInSystemRequestBody();
+            return ((Website.AdminService.Admin_ServiceSoap)(this)).GetAllStudentInSystemAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Website.AdminService.GetAllTeacherInSystemResponse Website.AdminService.Admin_ServiceSoap.GetAllTeacherInSystem(Website.AdminService.GetAllTeacherInSystemRequest request) {
+            return base.Channel.GetAllTeacherInSystem(request);
+        }
+        
+        public string GetAllTeacherInSystem() {
+            Website.AdminService.GetAllTeacherInSystemRequest inValue = new Website.AdminService.GetAllTeacherInSystemRequest();
+            inValue.Body = new Website.AdminService.GetAllTeacherInSystemRequestBody();
+            Website.AdminService.GetAllTeacherInSystemResponse retVal = ((Website.AdminService.Admin_ServiceSoap)(this)).GetAllTeacherInSystem(inValue);
+            return retVal.Body.GetAllTeacherInSystemResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Website.AdminService.GetAllTeacherInSystemResponse> Website.AdminService.Admin_ServiceSoap.GetAllTeacherInSystemAsync(Website.AdminService.GetAllTeacherInSystemRequest request) {
+            return base.Channel.GetAllTeacherInSystemAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Website.AdminService.GetAllTeacherInSystemResponse> GetAllTeacherInSystemAsync() {
+            Website.AdminService.GetAllTeacherInSystemRequest inValue = new Website.AdminService.GetAllTeacherInSystemRequest();
+            inValue.Body = new Website.AdminService.GetAllTeacherInSystemRequestBody();
+            return ((Website.AdminService.Admin_ServiceSoap)(this)).GetAllTeacherInSystemAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
